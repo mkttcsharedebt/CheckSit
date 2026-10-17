@@ -776,7 +776,7 @@
     <div id="toastContainer" class="fixed bottom-5 right-5 z-50 flex flex-col gap-2 pointer-events-none"></div>
 
     <!-- DEDICATED PRINT SLIP (Visible during print / capture) -->
-    <div id="printArea" class="print-only print-container font-sarabun bg-white text-slate-900">
+    <div id="printArea" class="print-only print-container font-sarabun bg-white text-slate-900 pb-12">
         <div class="flex items-center justify-between border-b-2 border-slate-900 pb-3 mb-4">
             <div class="w-20 h-20 flex-shrink-0">
                 <img src="logo.png" alt="ตราสหกรณ์" class="w-full h-full object-cover rounded-full" onerror="this.src='https://via.placeholder.com/80?text=COOP'">
@@ -816,7 +816,7 @@
             </ul>
         </div>
 
-        <div class="mt-4 pt-4 flex justify-between items-end text-xs text-slate-700">
+        <div class="mt-4 pt-4 pb-6flex justify-between items-end text-xs text-slate-700">
             <div>
                 <p>หมายเหตุ: บัตรพิมพ์นี้ใช้สำหรับอำนวยความสะดวกในการตรวจสอบสิทธิเบื้องต้น เท่านั้น</p>
             </div>
@@ -164047,38 +164047,42 @@
         }
 
         async function generateSlipImage() {
-            const printEl = document.getElementById('printArea');
-            if (!printEl) return;
+    const printEl = document.getElementById('printArea');
+    if (!printEl) return;
 
-            // ทำให้ Print Element แสดงผลชั่วคราวเพื่อเรนเดอร์ Canvas
-            printEl.style.display = 'block';
-            printEl.style.position = 'absolute';
-            printEl.style.left = '-9999px';
+    // แสดง Element เพื่อจับภาพ และเพิ่มระยะเว้นด้านล่างป้องกันขอบตัด
+    printEl.style.display = 'block';
+    printEl.style.position = 'absolute';
+    printEl.style.left = '-9999px';
+    printEl.style.paddingBottom = '40px'; // เพิ่มระยะเว้นด้านล่าง 40px ก่อนจับภาพ
 
-            try {
-                const canvas = await html2canvas(printEl, {
-                    scale: 2,
-                    backgroundColor: '#ffffff',
-                    useCORS: true
-                });
+    try {
+        const canvas = await html2canvas(printEl, {
+            scale: 2,
+            backgroundColor: '#ffffff',
+            useCORS: true,
+            windowHeight: printEl.scrollHeight + 60 // ขยายความสูงเผื่อขอบล่าง
+        });
 
-                const imgData = canvas.toDataURL('image/png');
-                document.getElementById('slipImagePreview').src = imgData;
-                
-                const downloadBtn = document.getElementById('downloadSlipBtn');
-                downloadBtn.href = imgData;
-                downloadBtn.download = `สิทธิเลือกตั้ง_${currentSearchResult.name || 'voter'}.png`;
+        const imgData = canvas.toDataURL('image/png');
+        document.getElementById('slipImagePreview').src = imgData;
+        
+        const downloadBtn = document.getElementById('downloadSlipBtn');
+        downloadBtn.href = imgData;
+        downloadBtn.download = `สิทธิเลือกตั้ง_${currentSearchResult ? currentSearchResult.name : 'voter'}.png`;
 
-                document.getElementById('slipImageModal').classList.remove('hidden');
-            } catch (err) {
-                console.error(err);
-                showToast('ไม่สามารถสร้างรูปภาพได้ กรุณาจับภาพหน้าจอ (Screenshot) แทน', 'error');
-            } finally {
-                printEl.style.display = '';
-                printEl.style.position = '';
-                printEl.style.left = '';
-            }
-        }
+        document.getElementById('slipImageModal').classList.remove('hidden');
+    } catch (err) {
+        console.error(err);
+        showToast('ไม่สามารถสร้างรูปภาพได้ กรุณาจับภาพหน้าจอ (Screenshot) แทน', 'error');
+    } finally {
+        // คืนค่ารูปแบบเดิม
+        printEl.style.display = '';
+        printEl.style.position = '';
+        printEl.style.left = '';
+        printEl.style.paddingBottom = '';
+    }
+}
 
         function closeSlipImageModal() {
             document.getElementById('slipImageModal').classList.add('hidden');
