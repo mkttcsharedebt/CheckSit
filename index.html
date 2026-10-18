@@ -449,13 +449,24 @@
         <!-- TAB 2: CONDITIONS & DISTRICTS VIEW -->
         <section id="tab-conditions" class="tab-content hidden space-y-6">
             <div class="bg-white rounded-2xl p-6 sm:p-8 shadow-md border border-slate-200 space-y-6">
-                <div class="border-b border-slate-200 pb-4">
-                    <h2 class="text-2xl font-bold text-coop-800 flex items-center gap-2">
-                        <i class="fa-solid fa-book text-coop-600"></i>
-                        ระเบียบการเลือกตั้ง คณะกรรมการ และผู้แทนสมาชิก
-                    </h2>
-                    <p class="text-xs sm:text-sm text-slate-500 mt-1">ประกาศสหกรณ์ออมทรัพย์ครูมหาสารคาม จำกัด เรื่อง การลงคะแนนเลือกตั้ง</p>
-                </div>
+<div class="border-b border-slate-200 pb-4 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+    <div>
+        <h2 class="text-2xl font-bold text-coop-800 flex items-center gap-2">
+            <i class="fa-solid fa-book text-coop-600"></i>
+            ระเบียบการเลือกตั้ง คณะกรรมการ และผู้แทนสมาชิก
+        </h2>
+        <p class="text-xs sm:text-sm text-slate-500 mt-1">ประกาศสหกรณ์ออมทรัพย์ครูมหาสารคาม จำกัด เรื่อง การลงคะแนนเลือกตั้ง</p>
+    </div>
+
+    <!-- ลิงก์เปิดไฟล์ PDF -->
+    <a href="pdf/announcement.pdf" 
+       target="_blank" 
+       rel="noopener noreferrer" 
+       class="inline-flex items-center gap-2 bg-red-600 hover:bg-red-700 text-white text-xs sm:text-sm font-semibold px-4 py-2.5 rounded-xl shadow-sm hover:shadow transition-all duration-200 w-fit shrink-0">
+        <i class="fa-solid fa-file-pdf text-base"></i>
+        <span>เปิดไฟล์ประกาศ (PDF)</span>
+    </a>
+</div>
 
                 <div class="space-y-4 text-xs sm:text-sm text-slate-700 leading-relaxed">
                     <div class="p-4 bg-amber-50 border-l-4 border-amber-500 rounded-r-lg">
@@ -787,9 +798,6 @@
                 <p class="text-xs font-semibold text-slate-800">The Mahasarakham Teacher Thrift Co-Operation Limited</p>
                 <p class="text-[11px] text-slate-600 mt-0.5">1102/6 ถ.สมถวิลราษฏร์ อ.เมือง จ.มหาสารคาม 44000 โทรศัพท์ 043-711557</p>
                 <p class="text-base font-bold text-slate-900 mt-2 underline">สิทธิการลงคะแนนสรรหา คณะกรรมการ และผู้แทนสมาชิก</p>
-            </div>
-            <div class="text-right text-[10px] text-slate-500">
-                เอกสารระบบออนไลน์<br/>พิมพ์วันที่: <span id="printDate"></span>
             </div>
         </div>
 
