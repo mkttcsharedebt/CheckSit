@@ -350,6 +350,32 @@
                             </div>
                         </div>
 
+                        <!-- บล็อกประวัติการเปลี่ยนแปลงสถานที่เลือกตั้ง -->
+                        <div id="res-transfer-box" class="p-4 bg-amber-50/90 rounded-xl border border-amber-300 space-y-2">
+                            <div class="flex items-center gap-2 text-amber-900 font-bold text-xs sm:text-sm">
+                                <i class="fa-solid fa-clock-rotate-left text-amber-600"></i>
+                                <span>ประวัติการเปลี่ยนแปลงสถานที่เลือกตั้ง (ย้ายมาจาก)</span>
+                            </div>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 text-xs sm:text-sm">
+                                <div class="bg-white/70 p-2.5 rounded-lg border border-amber-200">
+                                    <span class="text-slate-500 text-xs block mb-0.5">ย้ายมาจากอำเภอ</span>
+                                    <span id="res-before-district" class="font-bold text-slate-900">-</span>
+                                </div>
+                                <div class="bg-white/70 p-2.5 rounded-lg border border-amber-200">
+                                    <span class="text-slate-500 text-xs block mb-0.5">ศูนย์เลือกตั้งที่</span>
+                                    <span id="res-before-center-no" class="font-bold text-slate-900">-</span>
+                                </div>
+                                <div class="bg-white/70 p-2.5 rounded-lg border border-amber-200">
+                                    <span class="text-slate-500 text-xs block mb-0.5">ชื่อศูนย์เดิม</span>
+                                    <span id="res-before-center-name" class="font-semibold text-slate-900">-</span>
+                                </div>
+                                <div class="bg-white/70 p-2.5 rounded-lg border border-amber-200">
+                                    <span class="text-slate-500 text-xs block mb-0.5">สังกัดเดิม</span>
+                                    <span id="res-before-affiliation-name" class="font-semibold text-slate-900">-</span>
+                                </div>
+                            </div>
+                        </div>
+
                         <!-- Date Time Reminder Footer Box -->
                         <div class="p-4 bg-coop-50 rounded-xl border border-coop-200 flex items-start gap-3">
                             <i class="fa-solid fa-circle-info text-coop-600 text-lg mt-0.5"></i>
@@ -441,6 +467,10 @@
                                     <i class="fa-solid fa-check text-amber-600 text-xs mt-1"></i>
                                     <span><strong>การสมัครเป็นผู้แทนสมาชิก:</strong> สมาชิกสามารถสมัครเข้ารับการเลือกตั้งเป็นผู้แทนสมาชิก ได้ตามหน่วยเลือกตั้งตามที่สหกรณ์ฯ ทำการประกาศรายชื่อสมาชิกที่มีสิทธิลงคะแนน ในวันที่ 15 ตุลาคม 2569 เท่านั้น</span>
                                 </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-check text-amber-600 text-xs mt-1"></i>
+                                    <span><strong>การเพิ่มเติมรายชื่อ และเปลี่ยนแปลงสถานที่ลงคะแนน:</strong> หลังจากที่มีการประกาศรายชื่อผู้มีสิทธิลงคะแนน วันที่ 15 ตุลาคม 2569 สมาชิกที่มีการเพิ่มเติมรายชื่อ หรือแจ้งเปลี่ยนแปลงสถานที่ลงคะแนน จะถูกเพิ่มเติมรายชื่อ ในใบรายชื่อเพิ่มเติม ของศูนย์การเลือกตั้งนั้น</span>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -496,6 +526,7 @@
                         <li><strong>การย้ายหน่วยเลือกตั้งข้าราชการบำนาญ:</strong> ยื่นความประสงค์ย้ายหน่วยเลือกตั้งได้ตามภูมิลำเนาปัจจุบัน โดยนำหลักฐานสำเนาทะเบียนบ้านยื่นฝ่ายทะเบียน</li>
                         <li><strong>อำเภอที่มีหลายหน่วยเลือกตั้ง:</strong> สำหรับอำเภอที่มีการแบ่งหน่วยเลือกตั้งมากกว่า 1 หน่วย สมาชิกข้าราชการบำนาญไม่สามารถขอย้ายข้ามหน่วยภายในอำเภอเดิมได้</li>
                         <li><strong>การสมัครเป็นผู้แทนสมาชิก:</strong> สมาชิกสามารถสมัครเข้ารับการเลือกตั้งเป็นผู้แทนสมาชิก ได้ตามหน่วยเลือกตั้งตามที่สหกรณ์ฯ ทำการประกาศรายชื่อสมาชิกที่มีสิทธิลงคะแนน ในวันที่ 15 ตุลาคม 2569 เท่านั้น</li>
+                        <li><strong>การเพิ่มเติมรายชื่อ และเปลี่ยนแปลงสถานที่ลงคะแนน:</strong> หลังจากที่มีการประกาศรายชื่อผู้มีสิทธิลงคะแนน วันที่ 15 ตุลาคม 2569 สมาชิกที่มีการเพิ่มเติมรายชื่อ หรือแจ้งเปลี่ยนแปลงสถานที่ลงคะแนน จะถูกเพิ่มเติมรายชื่อ ในใบรายชื่อเพิ่มเติม ของศูนย์การเลือกตั้งนั้น</li>
                     </ul>
                     <img src="calendar.png" alt="ปฏิทิน" class="w-full h-auto object-cover rounded-sm" onerror="this.style.display='none'">
                     <img src="district.png" alt="หน่วยเลือกตั้ง" class="w-full h-auto object-cover rounded-sm" onerror="this.style.display='none'">
@@ -818,6 +849,14 @@
                 <div><strong>ลำดับรายชื่อ:</strong> <span id="print-list-no" class="font-black text-xl text-amber-900 font-mono">-</span></div>
                 <div><strong>สิทธิในการลงคะแนน:</strong> <span id="print-rights" class="font-bold text-slate-900">-</span></div>
             </div>
+            <!-- ภายใน #printArea ให้เพิ่มส่วนนี้ต่อท้ายรายละเอียดสิทธิการลงคะแนน -->
+            <div id="print-transfer-box" class="mt-3 pt-2 border-t border-slate-300 text-xs text-slate-800">
+                <span class="font-bold text-amber-900">ประวัติการย้ายสถานที่เลือกตั้ง:</span>
+                ย้ายมาจากอำเภอ <span id="print-before-district" class="font-bold">-</span> |
+                ศูนย์เลือกตั้งที่ <span id="print-before-center-no" class="font-bold">-</span>
+                (<span id="print-before-center-name" class="font-semibold">-</span>) |
+                สังกัดเดิม: <span id="print-before-affiliation-name" class="font-semibold">-</span>
+            </div>
         </div>
 
         <div class="border border-slate-300 rounded-lg p-4 space-y-2 text-xs leading-relaxed">
@@ -851,6 +890,230 @@
         // ข้อมูลเริ่มต้นสำหรับระบบ
         const DEFAULT_VOTERS = [
             
+  {
+  "citizenId": 3149900165211,
+  "name": "นางธนะวดี  พรมศาลา",
+  "district": "เมือง 1",
+  "pollingPlace": "ร.ร.เทศบาลสามัคคีวิทยา",
+  "centerNo": 2,
+  "centerName": "บำนาญ อ.เมือง 1 หน่วยที่ 2",
+  "affiliationNo": 2,
+  "affiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 2 (รายชื่อเพิ่มเติม)",
+  "listNo": 7,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.เมือง 1",
+  "BeforeCenterNo": 1,
+  "BeforeCenterName": "บำนาญ อ.เมือง 1 หน่วยที่ 1",
+  "BeforeAffiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 1"
+ },
+ {
+  "citizenId": 3400700727702,
+  "name": "นายณัฐพัชร์  วงศ์พัฒนาธนเดช",
+  "district": "เมือง 1",
+  "pollingPlace": "ร.ร.เทศบาลสามัคคีวิทยา",
+  "centerNo": 2,
+  "centerName": "บำนาญ อ.เมือง 1 หน่วยที่ 2",
+  "affiliationNo": 2,
+  "affiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 2 (รายชื่อเพิ่มเติม)",
+  "listNo": 8,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.แกดำ",
+  "BeforeCenterNo": 3,
+  "BeforeCenterName": "บำนาญ อ.แกดำ",
+  "BeforeAffiliationName": "บำนาญ อ.แกดำ"
+ },
+ {
+  "citizenId": 3401300124343,
+  "name": "นางนวลละดา  นนสีลาด",
+  "district": "เมือง 1",
+  "pollingPlace": "ร.ร.เทศบาลสามัคคีวิทยา",
+  "centerNo": 2,
+  "centerName": "บำนาญ อ.เมือง 1 หน่วยที่ 2",
+  "affiliationNo": 2,
+  "affiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 2 (รายชื่อเพิ่มเติม)",
+  "listNo": 3,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.เมือง 2",
+  "BeforeCenterNo": 14,
+  "BeforeCenterName": "บำนาญ อ.เมือง 2 หน่วยที่ 4",
+  "BeforeAffiliationName": "บำนาญ อ.เมือง 2 หน่วยที่ 4"
+ },
+ {
+  "citizenId": 3440200175581,
+  "name": "นางเขมณัฏฐ์  วงศ์พัฒนาธนเดช",
+  "district": "เมือง 1",
+  "pollingPlace": "ร.ร.เทศบาลสามัคคีวิทยา",
+  "centerNo": 2,
+  "centerName": "บำนาญ อ.เมือง 1 หน่วยที่ 2",
+  "affiliationNo": 2,
+  "affiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 2 (รายชื่อเพิ่มเติม)",
+  "listNo": 2,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.แกดำ",
+  "BeforeCenterNo": 3,
+  "BeforeCenterName": "บำนาญ อ.แกดำ",
+  "BeforeAffiliationName": "บำนาญ อ.แกดำ"
+ },
+ {
+  "citizenId": 3440200236998,
+  "name": "นางไพบูลย์  ครุฑทรัพย์",
+  "district": "เมือง 1",
+  "pollingPlace": "ร.ร.เทศบาลสามัคคีวิทยา",
+  "centerNo": 2,
+  "centerName": "บำนาญ อ.เมือง 1 หน่วยที่ 2",
+  "affiliationNo": 2,
+  "affiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 2 (รายชื่อเพิ่มเติม)",
+  "listNo": 9,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.แกดำ",
+  "BeforeCenterNo": 3,
+  "BeforeCenterName": "บำนาญ อ.แกดำ",
+  "BeforeAffiliationName": "บำนาญ อ.แกดำ"
+ },
+ {
+  "citizenId": 3440600942032,
+  "name": "นายกฤติพงศ์  สัตพันธุ์",
+  "district": "บรบือ",
+  "pollingPlace": "ร.ร.บ้านบรบือ",
+  "centerNo": 10,
+  "centerName": "บำนาญ อ.บรบือ หน่วยที่ 3",
+  "affiliationNo": 2,
+  "affiliationName": "บำนาญ อ.บรบือ หน่วยที่ 3 (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.โกสุมพิสัย",
+  "BeforeCenterNo": 11,
+  "BeforeCenterName": "บำนาญ อ.โกสุม หน่วยที่ 4",
+  "BeforeAffiliationName": "บำนาญ อ.โกสุม หน่วยที่ 4"
+ },
+ {
+  "citizenId": 3440700459465,
+  "name": "นายสมร  จันทเขต",
+  "district": "นาเชือก",
+  "pollingPlace": "ร.ร.เทศบาลนาเชือก",
+  "centerNo": 6,
+  "centerName": "บำนาญ อ.นาเชือก หน่วยที่ 2/บำนาญ ร.ร.เทศบาลนาเชือก",
+  "affiliationNo": 3,
+  "affiliationName": "บำนาญ อ.นาเชือก หน่วยที่ 2 (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.วาปีปทุม",
+  "BeforeCenterNo": 10,
+  "BeforeCenterName": "บำนาญ อ.วาปีปทุม หน่วยที่ 2",
+  "BeforeAffiliationName": "บำนาญ อ.วาปีปทุม หน่วยที่ 2"
+ },
+ {
+  "citizenId": 3449900040890,
+  "name": "นางทิพยวิมล  ดวงเวียงคำ",
+  "district": "เมือง 2",
+  "pollingPlace": "ร.ร.หลักเมือง",
+  "centerNo": 17,
+  "centerName": "บำนาญ อ.เมือง 2 หน่วยที่ 7",
+  "affiliationNo": 2,
+  "affiliationName": "บำนาญ อ.เมือง 2 หน่วยที่ 7 (รายชื่อเพิ่มเติม)",
+  "listNo": 3,
+  "rights": "ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.โกสุมพิสัย",
+  "BeforeCenterNo": 11,
+  "BeforeCenterName": "บำนาญ อ.โกสุม หน่วยที่ 4",
+  "BeforeAffiliationName": "บำนาญ อ.โกสุม หน่วยที่ 4"
+ },
+ {
+  "citizenId": 3449900046057,
+  "name": "นางมลิวัลย์  มองฤทธิ์",
+  "district": "เมือง 1",
+  "pollingPlace": "ร.ร.เทศบาลสามัคคีวิทยา",
+  "centerNo": 2,
+  "centerName": "บำนาญ อ.เมือง 1 หน่วยที่ 2",
+  "affiliationNo": 2,
+  "affiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 2 (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.เมือง 2",
+  "BeforeCenterNo": 12,
+  "BeforeCenterName": "บำนาญ อ.เมือง 2 หน่วยที่ 2",
+  "BeforeAffiliationName": "บำนาญ อ.เมือง 2 หน่วยที่ 2"
+ },
+ {
+  "citizenId": 3449900163878,
+  "name": "นายสันติ  ใหม่คามิ",
+  "district": "เมือง 1",
+  "pollingPlace": "ร.ร.เทศบาลสามัคคีวิทยา",
+  "centerNo": 2,
+  "centerName": "บำนาญ อ.เมือง 1 หน่วยที่ 2",
+  "affiliationNo": 2,
+  "affiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 2 (รายชื่อเพิ่มเติม)",
+  "listNo": 6,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.เมือง 1",
+  "BeforeCenterNo": 1,
+  "BeforeCenterName": "บำนาญ อ.เมือง 1 หน่วยที่ 1",
+  "BeforeAffiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 1"
+ },
+ {
+  "citizenId": 3449900275633,
+  "name": "นางสุวณีย์  ศรีถาวรณ์",
+  "district": "เมือง 2",
+  "pollingPlace": "ร.ร.หลักเมือง",
+  "centerNo": 17,
+  "centerName": "บำนาญ อ.เมือง 2 หน่วยที่ 7",
+  "affiliationNo": 2,
+  "affiliationName": "บำนาญ อ.เมือง 2 หน่วยที่ 7 (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.แกดำ",
+  "BeforeCenterNo": 3,
+  "BeforeCenterName": "บำนาญ อ.แกดำ",
+  "BeforeAffiliationName": "บำนาญ อ.แกดำ"
+ },
+ {
+  "citizenId": 3450101271248,
+  "name": "นายสงบ  ศรีถาวรณ์",
+  "district": "เมือง 2",
+  "pollingPlace": "ร.ร.หลักเมือง",
+  "centerNo": 17,
+  "centerName": "บำนาญ อ.เมือง 2 หน่วยที่ 7",
+  "affiliationNo": 2,
+  "affiliationName": "บำนาญ อ.เมือง 2 หน่วยที่ 7 (รายชื่อเพิ่มเติม)",
+  "listNo": 2,
+  "rights": "ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.แกดำ",
+  "BeforeCenterNo": 3,
+  "BeforeCenterName": "บำนาญ อ.แกดำ",
+  "BeforeAffiliationName": "บำนาญ อ.แกดำ"
+ },
+ {
+  "citizenId": 3460300213906,
+  "name": "นายจำรัส  คำทอง",
+  "district": "เมือง 1",
+  "pollingPlace": "ร.ร.เทศบาลสามัคคีวิทยา",
+  "centerNo": 2,
+  "centerName": "บำนาญ อ.เมือง 1 หน่วยที่ 2",
+  "affiliationNo": 2,
+  "affiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 2 (รายชื่อเพิ่มเติม)",
+  "listNo": 5,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.กันทรวิชัย",
+  "BeforeCenterNo": 7,
+  "BeforeCenterName": "บำนาญ อ.กันทรวิชัย หน่วยที่ 2",
+  "BeforeAffiliationName": "บำนาญ อ.กันทรวิชัย หน่วยที่ 2"
+ },
+ {
+  "citizenId": 3460500136913,
+  "name": "นางอนงค์  นนทศิลา",
+  "district": "เมือง 1",
+  "pollingPlace": "ร.ร.เทศบาลสามัคคีวิทยา",
+  "centerNo": 2,
+  "centerName": "บำนาญ อ.เมือง 1 หน่วยที่ 2",
+  "affiliationNo": 2,
+  "affiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 2 (รายชื่อเพิ่มเติม)",
+  "listNo": 4,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.เมือง 1",
+  "BeforeCenterNo": 1,
+  "BeforeCenterName": "บำนาญ อ.เมือง 1 หน่วยที่ 1",
+  "BeforeAffiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 1"
+ },
  {
   "citizenId": 3449900126506,
   "name": "นายไพบูลย์  อนุฤทธิ์",
@@ -2244,18 +2507,6 @@
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 3460500136913,
-  "name": "นางอนงค์  นนทศิลา",
-  "district": "เมือง 1",
-  "pollingPlace": "ร.ร.เทศบาลสามัคคีวิทยา",
-  "centerNo": 1,
-  "centerName": "บำนาญ อ.เมือง 1 หน่วยที่ 1",
-  "affiliationNo": 1,
-  "affiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 1",
-  "listNo": 117,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
   "citizenId": 3709900303944,
   "name": "นางสาวทิพวรรณ์  อารยะเศรณี",
   "district": "เมือง 1",
@@ -2868,18 +3119,6 @@
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 3449900163878,
-  "name": "นายสันติ  ใหม่คามิ",
-  "district": "เมือง 1",
-  "pollingPlace": "ร.ร.เทศบาลสามัคคีวิทยา",
-  "centerNo": 1,
-  "centerName": "บำนาญ อ.เมือง 1 หน่วยที่ 1",
-  "affiliationNo": 1,
-  "affiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 1",
-  "listNo": 169,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
   "citizenId": 3440100618104,
   "name": "นายนิคม  ชมภูหลง",
   "district": "เมือง 1",
@@ -3057,18 +3296,6 @@
   "affiliationNo": 1,
   "affiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 1",
   "listNo": 184,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 3149900165211,
-  "name": "นางธนะวดี  พรมศาลา",
-  "district": "เมือง 1",
-  "pollingPlace": "ร.ร.เทศบาลสามัคคีวิทยา",
-  "centerNo": 1,
-  "centerName": "บำนาญ อ.เมือง 1 หน่วยที่ 1",
-  "affiliationNo": 1,
-  "affiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 1",
-  "listNo": 185,
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
@@ -11929,7 +12156,7 @@
  },
  {
   "citizenId": 3440400685222,
-  "name": "นายบุญถม  พลศรี(เมือง1)",
+  "name": "นายบุญถม  พลศรี",
   "district": "เมือง 1",
   "pollingPlace": "ร.ร.เทศบาลบูรพาพิทยาคาร",
   "centerNo": 7,
@@ -15709,7 +15936,7 @@
  },
  {
   "citizenId": 3449900210370,
-  "name": "นายสำเร็จ  สารมาคม(พิเศษ)",
+  "name": "นายสำเร็จ  สารมาคม",
   "district": "เมือง 1",
   "pollingPlace": "ม.ราชภัฏ",
   "centerNo": 9,
@@ -20581,7 +20808,7 @@
  },
  {
   "citizenId": 3330401128476,
-  "name": "นายกฤษณะ  กั้วสิทธิ์(พิเศษ)",
+  "name": "นายกฤษณะ  กั้วสิทธิ์",
   "district": "เมือง 1",
   "pollingPlace": "ว.อาชีวศึกษา",
   "centerNo": 13,
@@ -20593,7 +20820,7 @@
  },
  {
   "citizenId": 3449900291566,
-  "name": "นางสาธิตา  ปราบภัย(พิเศษ)",
+  "name": "นางสาธิตา  ปราบภัย",
   "district": "เมือง 1",
   "pollingPlace": "ว.อาชีวศึกษา",
   "centerNo": 13,
@@ -34500,18 +34727,6 @@
   "rights": "ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 3449900046057,
-  "name": "นางมลิวัลย์  มองฤทธิ์",
-  "district": "เมือง 2",
-  "pollingPlace": "ร.ร.หลักเมือง",
-  "centerNo": 12,
-  "centerName": "บำนาญ อ.เมือง 2 หน่วยที่ 2",
-  "affiliationNo": 1,
-  "affiliationName": "บำนาญ อ.เมือง 2 หน่วยที่ 2",
-  "listNo": 77,
-  "rights": "ผู้แทนสมาชิก"
- },
- {
   "citizenId": 3449900179952,
   "name": "นางปทุมพร  สุพลไทย",
   "district": "เมือง 2",
@@ -39861,18 +40076,6 @@
   "affiliationNo": 1,
   "affiliationName": "บำนาญ อ.เมือง 2 หน่วยที่ 4",
   "listNo": 43,
-  "rights": "ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 3401300124343,
-  "name": "นางนวลละดา  นนสีลาด",
-  "district": "เมือง 2",
-  "pollingPlace": "ร.ร.หลักเมือง",
-  "centerNo": 14,
-  "centerName": "บำนาญ อ.เมือง 2 หน่วยที่ 4",
-  "affiliationNo": 1,
-  "affiliationName": "บำนาญ อ.เมือง 2 หน่วยที่ 4",
-  "listNo": 44,
   "rights": "ผู้แทนสมาชิก"
  },
  {
@@ -49693,7 +49896,7 @@
  },
  {
   "citizenId": 3449900061170,
-  "name": "นายวรงค์  วงษ์หาแก้ว(พิเศษ)",
+  "name": "นายวรงค์  วงษ์หาแก้ว",
   "district": "เมือง 2",
   "pollingPlace": "ร.ร.หลักเมือง",
   "centerNo": 17,
@@ -49705,7 +49908,7 @@
  },
  {
   "citizenId": 3449900179499,
-  "name": "นางตลับเพชร  วิรุฬดก(พิเศษ)",
+  "name": "นางตลับเพชร  วิรุฬดก",
   "district": "เมือง 2",
   "pollingPlace": "ร.ร.หลักเมือง",
   "centerNo": 17,
@@ -49717,7 +49920,7 @@
  },
  {
   "citizenId": 3441000299563,
-  "name": "นางสาวกชพรรณ  กุลภัทรเมธา(พิเศษ)",
+  "name": "นางสาวกชพรรณ  กุลภัทรเมธา",
   "district": "เมือง 2",
   "pollingPlace": "ร.ร.หลักเมือง",
   "centerNo": 17,
@@ -49741,7 +49944,7 @@
  },
  {
   "citizenId": 3440100782788,
-  "name": "นายมานพ  ฤทธิสิงห์(พิเศษ)",
+  "name": "นายมานพ  ฤทธิสิงห์",
   "district": "เมือง 2",
   "pollingPlace": "ร.ร.หลักเมือง",
   "centerNo": 17,
@@ -49753,7 +49956,7 @@
  },
  {
   "citizenId": 3449900150083,
-  "name": "นางเรวดี  ภูถาวร(พิเศษ)",
+  "name": "นางเรวดี  ภูถาวร",
   "district": "เมือง 2",
   "pollingPlace": "ร.ร.หลักเมือง",
   "centerNo": 17,
@@ -49765,7 +49968,7 @@
  },
  {
   "citizenId": 3440100397141,
-  "name": "นางนงนุช  กาญจนะลาภ(พิเศษ)",
+  "name": "นางนงนุช  กาญจนะลาภ",
   "district": "เมือง 2",
   "pollingPlace": "ร.ร.หลักเมือง",
   "centerNo": 17,
@@ -49777,7 +49980,7 @@
  },
  {
   "citizenId": 3440100391835,
-  "name": "นางไพวรรณ์  วุฒิพันธุ์(พิเศษ)",
+  "name": "นางไพวรรณ์  วุฒิพันธุ์",
   "district": "เมือง 2",
   "pollingPlace": "ร.ร.หลักเมือง",
   "centerNo": 17,
@@ -49801,7 +50004,7 @@
  },
  {
   "citizenId": 3440100568654,
-  "name": "นายสฤษดิ์  เดชบุรัมย์(พิเศษ)",
+  "name": "นายสฤษดิ์  เดชบุรัมย์",
   "district": "เมือง 2",
   "pollingPlace": "ร.ร.หลักเมือง",
   "centerNo": 17,
@@ -49825,7 +50028,7 @@
  },
  {
   "citizenId": 3440100568646,
-  "name": "นางพรรณี  เดชบุรัมย์(พิเศษ)",
+  "name": "นางพรรณี  เดชบุรัมย์",
   "district": "เมือง 2",
   "pollingPlace": "ร.ร.หลักเมือง",
   "centerNo": 17,
@@ -57661,7 +57864,7 @@
  },
  {
   "citizenId": 3449900248831,
-  "name": "นางธัญญ์รัตน์  พิมพาภรณ์(พิเศษ)",
+  "name": "นางธัญญ์รัตน์  พิมพาภรณ์",
   "district": "โกสุมพิสัย",
   "pollingPlace": "สพป.มค.3",
   "centerNo": 7,
@@ -67248,18 +67451,6 @@
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 3440600942032,
-  "name": "นายกฤติพงศ์  สัตพันธุ์",
-  "district": "โกสุมพิสัย",
-  "pollingPlace": "ร.ร.ศรีโกสุมวิทยาฯ",
-  "centerNo": 11,
-  "centerName": "บำนาญ อ.โกสุม หน่วยที่ 4",
-  "affiliationNo": 1,
-  "affiliationName": "บำนาญ อ.โกสุม หน่วยที่ 4",
-  "listNo": 75,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
   "citizenId": 3440300102870,
   "name": "นางอำพร  สาระกุมาร",
   "district": "โกสุมพิสัย",
@@ -67905,18 +68096,6 @@
   "affiliationNo": 1,
   "affiliationName": "บำนาญ อ.โกสุม หน่วยที่ 4",
   "listNo": 129,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 3449900040890,
-  "name": "นางทิพยวิมล  ดวงเวียงคำ",
-  "district": "โกสุมพิสัย",
-  "pollingPlace": "ร.ร.ศรีโกสุมวิทยาฯ",
-  "centerNo": 11,
-  "centerName": "บำนาญ อ.โกสุม หน่วยที่ 4",
-  "affiliationNo": 1,
-  "affiliationName": "บำนาญ อ.โกสุม หน่วยที่ 4",
-  "listNo": 130,
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
@@ -68617,7 +68796,7 @@
  },
  {
   "citizenId": 3440300147067,
-  "name": "นายวิเชียร  แสงตันชัย(พิเศษ)",
+  "name": "นายวิเชียร  แสงตันชัย",
   "district": "โกสุมพิสัย",
   "pollingPlace": "ร.ร.ศรีโกสุมวิทยาฯ",
   "centerNo": 11,
@@ -69385,7 +69564,7 @@
  },
  {
   "citizenId": 1449900334749,
-  "name": "นายณัฎฐกิตติ์  จันปัสสา(พิเศษ)",
+  "name": "นายณัฎฐกิตติ์  จันปัสสา",
   "district": "วาปีปทุม",
   "pollingPlace": "ร.ร.เมืองวาปีปทุม",
   "centerNo": 1,
@@ -80952,18 +81131,6 @@
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 3440700459465,
-  "name": "นายสมร  จันทเขต",
-  "district": "วาปีปทุม",
-  "pollingPlace": "ร.ร.อนุบาลวาปีปทุม",
-  "centerNo": 10,
-  "centerName": "บำนาญ อ.วาปีปทุม หน่วยที่ 2",
-  "affiliationNo": 1,
-  "affiliationName": "บำนาญ อ.วาปีปทุม หน่วยที่ 2",
-  "listNo": 59,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
   "citizenId": 3440900415941,
   "name": "นายสวัสดิ์  ชาวพงษ์",
   "district": "วาปีปทุม",
@@ -87961,7 +88128,7 @@
  },
  {
   "citizenId": 3440900592258,
-  "name": "นายทองปอนด์  ทองภูธรณ์(พิเศษ)",
+  "name": "นายทองปอนด์  ทองภูธรณ์",
   "district": "วาปีปทุม",
   "pollingPlace": "ร.ร.อนุบาลวาปีปทุม",
   "centerNo": 12,
@@ -88273,7 +88440,7 @@
  },
  {
   "citizenId": 5440900009184,
-  "name": "นายสุเวช  มูลธิยะ(พิเศษ)",
+  "name": "นายสุเวช  มูลธิยะ",
   "district": "วาปีปทุม",
   "pollingPlace": "ร.ร.อนุบาลวาปีปทุม",
   "centerNo": 12,
@@ -93337,7 +93504,7 @@
  },
  {
   "citizenId": 3440400683157,
-  "name": "นายบุญถม  พลศรี(กันทร)",
+  "name": "นายบุญถม  พลศรี",
   "district": "กันทรวิชัย",
   "pollingPlace": "ร.ร.อนุบาลกันทรวิชัย",
   "centerNo": 6,
@@ -96189,18 +96356,6 @@
   "affiliationNo": 1,
   "affiliationName": "บำนาญ อ.กันทรวิชัย หน่วยที่ 2",
   "listNo": 149,
-  "rights": "ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 3460300213906,
-  "name": "นายจำรัส  คำทอง",
-  "district": "กันทรวิชัย",
-  "pollingPlace": "ร.ร.อนุบาลกันทรวิชัย",
-  "centerNo": 7,
-  "centerName": "บำนาญ อ.กันทรวิชัย หน่วยที่ 2",
-  "affiliationNo": 1,
-  "affiliationName": "บำนาญ อ.กันทรวิชัย หน่วยที่ 2",
-  "listNo": 150,
   "rights": "ผู้แทนสมาชิก"
  },
  {
@@ -107425,7 +107580,7 @@
  },
  {
   "citizenId": 3440500682560,
-  "name": "นายสัมฤทธิ์  ดีอันกอง(พิเศษ)",
+  "name": "นายสัมฤทธิ์  ดีอันกอง",
   "district": "เชียงยืน",
   "pollingPlace": "ร.ร.บ้านเชียงยืน",
   "centerNo": 7,
@@ -113221,7 +113376,7 @@
  },
  {
   "citizenId": 5440100001570,
-  "name": "นายยุทธนา  มะเสนา(พิเศษ)",
+  "name": "นายยุทธนา  มะเสนา",
   "district": "บรบือ",
   "pollingPlace": "ร.ร.บ้านหนองจิก",
   "centerNo": 5,
@@ -138337,7 +138492,7 @@
  },
  {
   "citizenId": 1440600010265,
-  "name": "นายสุชาติ  วิริยะ(พยัค)",
+  "name": "นายสุชาติ  วิริยะ",
   "district": "พยัคฆภูมิพิสัย",
   "pollingPlace": "ร.ร.พยัคฆภูมิวิทยาคาร",
   "centerNo": 5,
@@ -138397,7 +138552,7 @@
  },
  {
   "citizenId": 3440800438923,
-  "name": "นางจีรนันท์  หารสุโพธิ์(เทศบาล)",
+  "name": "นางจีรนันท์  หารสุโพธิ์",
   "district": "พยัคฆภูมิพิสัย",
   "pollingPlace": "ร.ร.พยัคฆภูมิวิทยาคาร",
   "centerNo": 5,
@@ -143905,7 +144060,7 @@
  },
  {
   "citizenId": 3451000188966,
-  "name": "นางนวลฉวี  บึงมุม(พิเศษ)",
+  "name": "นางนวลฉวี  บึงมุม",
   "district": "พยัคฆภูมิพิสัย",
   "pollingPlace": "ร.ร.อนุบาลพยัคฆภูมิพิสัย",
   "centerNo": 7,
@@ -155616,18 +155771,6 @@
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 3440200175581,
-  "name": "นางเขมณัฏฐ์  วงศ์พัฒนาธนเดช",
-  "district": "แกดำ",
-  "pollingPlace": "ร.ร.อนุบาลแกดำ",
-  "centerNo": 3,
-  "centerName": "บำนาญ อ.แกดำ",
-  "affiliationNo": 1,
-  "affiliationName": "บำนาญ อ.แกดำ",
-  "listNo": 56,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
   "citizenId": 3440100536108,
   "name": "นางบุดสี  สะดวก",
   "district": "แกดำ",
@@ -156072,18 +156215,6 @@
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 3449900275633,
-  "name": "นางสุวณีย์  ศรีถาวรณ์",
-  "district": "แกดำ",
-  "pollingPlace": "ร.ร.อนุบาลแกดำ",
-  "centerNo": 3,
-  "centerName": "บำนาญ อ.แกดำ",
-  "affiliationNo": 1,
-  "affiliationName": "บำนาญ อ.แกดำ",
-  "listNo": 94,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
   "citizenId": 3440200232631,
   "name": "นายประเสริฐ  ซ้ายสนาม",
   "district": "แกดำ",
@@ -156492,18 +156623,6 @@
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 3450101271248,
-  "name": "นายสงบ  ศรีถาวรณ์",
-  "district": "แกดำ",
-  "pollingPlace": "ร.ร.อนุบาลแกดำ",
-  "centerNo": 3,
-  "centerName": "บำนาญ อ.แกดำ",
-  "affiliationNo": 1,
-  "affiliationName": "บำนาญ อ.แกดำ",
-  "listNo": 129,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
   "citizenId": 3440100827005,
   "name": "นายสุวัฒน์  แสงแก้ว",
   "district": "แกดำ",
@@ -156864,18 +156983,6 @@
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 3400700727702,
-  "name": "นายณัฐพัชร์  วงศ์พัฒนาธนเดช",
-  "district": "แกดำ",
-  "pollingPlace": "ร.ร.อนุบาลแกดำ",
-  "centerNo": 3,
-  "centerName": "บำนาญ อ.แกดำ",
-  "affiliationNo": 1,
-  "affiliationName": "บำนาญ อ.แกดำ",
-  "listNo": 160,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
   "citizenId": 3301600535668,
   "name": "นางศริญญา  เสาร์ห้า",
   "district": "แกดำ",
@@ -157176,20 +157283,8 @@
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 3440200236998,
-  "name": "นางไพบูลย์  ครุฑทรัพย์(พิเศษ)",
-  "district": "แกดำ",
-  "pollingPlace": "ร.ร.อนุบาลแกดำ",
-  "centerNo": 3,
-  "centerName": "บำนาญ อ.แกดำ",
-  "affiliationNo": 1,
-  "affiliationName": "บำนาญ อ.แกดำ",
-  "listNo": 186,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
   "citizenId": 3102300073068,
-  "name": "นางอินทิวา  อินศร(พิเศษ)",
+  "name": "นางอินทิวา  อินศร",
   "district": "แกดำ",
   "pollingPlace": "ร.ร.อนุบาลแกดำ",
   "centerNo": 3,
@@ -163875,7 +163970,11 @@
                     affiliationNo: getVal('ลำดับสังกัด', 'สังกัด', 'affiliationNo', 'affiliationno'),
                     affiliationName: getVal('ชื่อสังกัด', 'affiliationName', 'affiliationname'),
                     listNo: getVal('ลำดับรายชื่อ', 'ลำดับ', 'listNo', 'listno'),
-                    rights: getVal('สิทธิ', 'สิทธิการลงคะแนน', 'rights') || 'กรรมการ และ ผู้แทนสมาชิก'
+                    rights: getVal('สิทธิ', 'สิทธิการลงคะแนน', 'rights') || 'กรรมการ และ ผู้แทนสมาชิก',
+                    BeforeDistrict: getVal('BeforeDistrict', 'ย้ายมาจากอำเภอ', 'beforedistrict'),
+                    BeforeCenterNo: getVal('BeforeCenterNo', 'ศูนย์เลือกตั้งเดิมที่', 'beforecenterno'),
+                    BeforeCenterName: getVal('BeforeCenterName', 'ชื่อศูนย์เดิม', 'beforecentername'),
+                    BeforeAffiliationName: getVal('BeforeAffiliationName', 'สังกัดเดิม', 'beforeaffiliationname')
                 };
             }).filter(v => v.citizenId || v.name);
         }
@@ -164025,15 +164124,27 @@
             document.getElementById('res-list-no').innerText = data.listNo || '-';
             document.getElementById('res-rights').innerText = data.rights || '-';
 
+            // ข้อมูลประวัติการย้ายสถานที่เลือกตั้ง (หน้าเว็บ)
+            document.getElementById('res-before-district').innerText = data.BeforeDistrict || '-';
+            document.getElementById('res-before-center-no').innerText = data.BeforeCenterNo || '-';
+            document.getElementById('res-before-center-name').innerText = data.BeforeCenterName || '-';
+            document.getElementById('res-before-affiliation-name').innerText = data.BeforeAffiliationName || '-';
+
             // Print slip fields
             document.getElementById('print-id').innerText = formatIdDisplay(data.citizenId);
             document.getElementById('print-name').innerText = data.name || '-';
             document.getElementById('print-district').innerText = data.district || '-';
             document.getElementById('print-polling-place').innerText = data.pollingPlace || '-';
             document.getElementById('print-center').innerText = `${data.centerNo} (${data.centerName})`;
-            document.getElementById('print-affiliation').innerText = `${data.affiliationNo} (${data.affiliationName})`;
+            document.getElementById('print-affiliation').innerText = `${data.affiliationNo} ${data.affiliationName}`;
             document.getElementById('print-list-no').innerText = data.listNo || '-';
             document.getElementById('print-rights').innerText = data.rights || '-';
+
+            // ข้อมูลประวัติการย้ายสถานที่เลือกตั้งบนใบพิมพ์ (Print Slip)
+            document.getElementById('print-before-district').innerText = data.BeforeDistrict || '-';
+            document.getElementById('print-before-center-no').innerText = data.BeforeCenterNo || '-';
+            document.getElementById('print-before-center-name').innerText = data.BeforeCenterName || '-';
+            document.getElementById('print-before-affiliation-name').innerText = data.BeforeAffiliationName || '-';
         }
 
         // Print or Generate Image Slip Solution for Mobile & In-App Browsers
