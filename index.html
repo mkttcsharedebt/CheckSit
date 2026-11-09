@@ -471,6 +471,10 @@
                                     <i class="fa-solid fa-check text-amber-600 text-xs mt-1"></i>
                                     <span><strong>การเพิ่มเติมรายชื่อ และเปลี่ยนแปลงสถานที่ลงคะแนน:</strong> หลังจากที่มีการประกาศรายชื่อผู้มีสิทธิลงคะแนน วันที่ 15 ตุลาคม 2569 สมาชิกที่มีการเพิ่มเติมรายชื่อ หรือแจ้งเปลี่ยนแปลงสถานที่ลงคะแนน จะถูกเพิ่มเติมรายชื่อ ในใบรายชื่อเพิ่มเติม ของศูนย์การเลือกตั้งนั้น</span>
                                 </li>
+                                <li class="flex items-start gap-2">
+                                    <i class="fa-solid fa-check text-amber-600 text-xs mt-1"></i>
+                                    <span><strong>หากสมาชิกย้ายโรงเรียน แต่อยู๋ในศูนย์การเลือกตั้งเดิม:</strong> ให้สมาชิกใช้สิทธิลงคะแนนตามรายชื่อของโรงเรียนเดิม แล้วในปีถัดไป สหกรณ์ฯ จะเปลี่ยนแปลงสิทธิการลงคะแนนตามข้อมูลโรงเรียนปัจจุบัน</span>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -527,6 +531,7 @@
                         <li><strong>อำเภอที่มีหลายหน่วยเลือกตั้ง:</strong> สำหรับอำเภอที่มีการแบ่งหน่วยเลือกตั้งมากกว่า 1 หน่วย สมาชิกข้าราชการบำนาญไม่สามารถขอย้ายข้ามหน่วยภายในอำเภอเดิมได้</li>
                         <li><strong>การสมัครเป็นผู้แทนสมาชิก:</strong> สมาชิกสามารถสมัครเข้ารับการเลือกตั้งเป็นผู้แทนสมาชิก ได้ตามหน่วยเลือกตั้งตามที่สหกรณ์ฯ ทำการประกาศรายชื่อสมาชิกที่มีสิทธิลงคะแนน ในวันที่ 15 ตุลาคม 2569 เท่านั้น</li>
                         <li><strong>การเพิ่มเติมรายชื่อ และเปลี่ยนแปลงสถานที่ลงคะแนน:</strong> หลังจากที่มีการประกาศรายชื่อผู้มีสิทธิลงคะแนน วันที่ 15 ตุลาคม 2569 สมาชิกที่มีการเพิ่มเติมรายชื่อ หรือแจ้งเปลี่ยนแปลงสถานที่ลงคะแนน จะถูกเพิ่มเติมรายชื่อ ในใบรายชื่อเพิ่มเติม ของศูนย์การเลือกตั้งนั้น</li>
+                        <li><strong>หากสมาชิกย้ายโรงเรียน แต่อยู๋ในศูนย์การเลือกตั้งเดิม:</strong> ให้สมาชิกใช้สิทธิลงคะแนนตามรายชื่อของโรงเรียนเดิม แล้วในปีถัดไป สหกรณ์ฯ จะเปลี่ยนแปลงสิทธิการลงคะแนนตามข้อมูลโรงเรียนปัจจุบัน</li>
                     </ul>
                     <img src="calendar.png" alt="ปฏิทิน" class="w-full h-auto object-cover rounded-sm" onerror="this.style.display='none'">
                     <img src="district.png" alt="หน่วยเลือกตั้ง" class="w-full h-auto object-cover rounded-sm" onerror="this.style.display='none'">
@@ -890,53 +895,117 @@
         // ข้อมูลเริ่มต้นสำหรับระบบ
         const DEFAULT_VOTERS = [
             
-  {
-  "citizenId": 3149900165211,
-  "name": "นางธนะวดี  พรมศาลา",
-  "district": "เมือง 1",
-  "pollingPlace": "ร.ร.เทศบาลสามัคคีวิทยา",
-  "centerNo": 2,
-  "centerName": "บำนาญ อ.เมือง 1 หน่วยที่ 2",
-  "affiliationNo": 2,
-  "affiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 2 (รายชื่อเพิ่มเติม)",
-  "listNo": 7,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก",
-  "BeforeDistrict": "อ.เมือง 1",
+   {
+  "citizenId": 3440400528739,
+  "name": "นางสุรางค์รัตน์  ยมศรีเคน",
+  "district": "กันทรวิชัย",
+  "pollingPlace": "ร.ร.อนุบาลกันทรวิชัย",
+  "centerNo": 3,
+  "centerName": "ศูนย์ 9 มิ่งเมือง",
+  "affiliationNo": 10,
+  "affiliationName": "ร.ร.บ้านอิตื้อดอนหวายขมิ้น (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.กันทรวิชัย",
   "BeforeCenterNo": 1,
-  "BeforeCenterName": "บำนาญ อ.เมือง 1 หน่วยที่ 1",
-  "BeforeAffiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 1"
+  "BeforeCenterName": "ศูนย์ 7 เมืองท่ามะค่าไส้จ่อ",
+  "BeforeAffiliationName": "ร.ร.บ้านโนนตาลกุดเวียนหนองหญ้าม้า"
  },
  {
-  "citizenId": 3400700727702,
-  "name": "นายณัฐพัชร์  วงศ์พัฒนาธนเดช",
+  "citizenId": 1440200005329,
+  "name": "นายนิรันดร์  พันโภคา",
+  "district": "แกดำ",
+  "pollingPlace": "ร.ร.อนุบาลแกดำ",
+  "centerNo": 1,
+  "centerName": "ศูนย์ 11 แกดำวังแสง/ร.ร.แกดำวิทยาคาร",
+  "affiliationNo": 11,
+  "affiliationName": "ร.ร.บ้านดอนก่อกกเหลี่ยม (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.กันทรวิชัย",
+  "BeforeCenterNo": 3,
+  "BeforeCenterName": "ศูนย์ 9 มิ่งเมือง",
+  "BeforeAffiliationName": "ร.ร.อนุบาลกันทรวิชัย  "
+ },
+ {
+  "citizenId": 3460300213906,
+  "name": "นายจำรัส  คำทอง",
   "district": "เมือง 1",
   "pollingPlace": "ร.ร.เทศบาลสามัคคีวิทยา",
   "centerNo": 2,
   "centerName": "บำนาญ อ.เมือง 1 หน่วยที่ 2",
   "affiliationNo": 2,
   "affiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 2 (รายชื่อเพิ่มเติม)",
-  "listNo": 8,
+  "listNo": 5,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.กันทรวิชัย",
+  "BeforeCenterNo": 7,
+  "BeforeCenterName": "บำนาญ อ.กันทรวิชัย หน่วยที่ 2",
+  "BeforeAffiliationName": "บำนาญ อ.กันทรวิชัย หน่วยที่ 2"
+ },
+ {
+  "citizenId": 5440390007878,
+  "name": "นางจีรภา  ชาติชนะ",
+  "district": "โกสุมพิสัย",
+  "pollingPlace": "ร.ร.ศรีโกสุมวิทยาฯ",
+  "centerNo": 1,
+  "centerName": "ศูนย์โกสัมพี/ร.ร.โกสุมวิทยาสรรค์",
+  "affiliationNo": 13,
+  "affiliationName": "ร.ร.โกสุมวิทยาสรรค์ (รายชื่อเพิ่มเติม)",
+  "listNo": 2,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.กุดรัง",
+  "BeforeCenterNo": 1,
+  "BeforeCenterName": "ศูนย์สร้อยดอกหมาก",
+  "BeforeAffiliationName": "ร.ร.กุดรังประชาสรรค์"
+ },
+ {
+  "citizenId": 1349900486965,
+  "name": "นายสรวัชร  พรหมรักษา",
+  "district": "วาปีปทุม",
+  "pollingPlace": "ร.ร.วาปีปทุม",
+  "centerNo": 6,
+  "centerName": "กลุ่มมัธยมศึกษา",
+  "affiliationNo": 4,
+  "affiliationName": "ร.ร.วาปีปทุม (รายชื่อเพิ่มเติม)",
+  "listNo": 2,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.กุดรัง",
+  "BeforeCenterNo": 1,
+  "BeforeCenterName": "ศูนย์สร้อยดอกหมาก",
+  "BeforeAffiliationName": "ร.ร.บ้านหนองแสง  "
+ },
+ {
+  "citizenId": 1440300173525,
+  "name": "นายเตวิช  สีเนหะ",
+  "district": "กุดรัง",
+  "pollingPlace": "ร.ร.บ้านหนองคลองหัวขัว",
+  "centerNo": 1,
+  "centerName": "ศูนย์สร้อยดอกหมาก/ร.ร.กุดรังประชาสรรค์/ร.ร.เลิงแฝกประชาบำรุง",
+  "affiliationNo": 15,
+  "affiliationName": "ร.ร.บ้านหนองแสง (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.กุดรัง",
+  "BeforeCenterNo": 2,
+  "BeforeCenterName": "ศูนย์ทรัพย์วารี",
+  "BeforeAffiliationName": "ร.ร.บ้านนาโพธิ์"
+ },
+ {
+  "citizenId": 1451100152703,
+  "name": "นางสาวทิพวรรณ  ผดุงรัตน์",
+  "district": "เมือง 1",
+  "pollingPlace": "ร.ร.เทศบาลสามัคคีวิทยา",
+  "centerNo": 2,
+  "centerName": "บำนาญ อ.เมือง 1 หน่วยที่ 2",
+  "affiliationNo": 2,
+  "affiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 2 (รายชื่อเพิ่มเติม)",
+  "listNo": 16,
   "rights": "กรรมการ และ ผู้แทนสมาชิก",
   "BeforeDistrict": "อ.แกดำ",
-  "BeforeCenterNo": 3,
-  "BeforeCenterName": "บำนาญ อ.แกดำ",
-  "BeforeAffiliationName": "บำนาญ อ.แกดำ"
- },
- {
-  "citizenId": 3401300124343,
-  "name": "นางนวลละดา  นนสีลาด",
-  "district": "เมือง 1",
-  "pollingPlace": "ร.ร.เทศบาลสามัคคีวิทยา",
-  "centerNo": 2,
-  "centerName": "บำนาญ อ.เมือง 1 หน่วยที่ 2",
-  "affiliationNo": 2,
-  "affiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 2 (รายชื่อเพิ่มเติม)",
-  "listNo": 3,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก",
-  "BeforeDistrict": "อ.เมือง 2",
-  "BeforeCenterNo": 14,
-  "BeforeCenterName": "บำนาญ อ.เมือง 2 หน่วยที่ 4",
-  "BeforeAffiliationName": "บำนาญ อ.เมือง 2 หน่วยที่ 4"
+  "BeforeCenterNo": 1,
+  "BeforeCenterName": "ศูนย์ 11 แกดำวังแสง",
+  "BeforeAffiliationName": "ร.ร.บ้านวังแสง"
  },
  {
   "citizenId": 3440200175581,
@@ -955,8 +1024,8 @@
   "BeforeAffiliationName": "บำนาญ อ.แกดำ"
  },
  {
-  "citizenId": 3440200236998,
-  "name": "นางไพบูลย์  ครุฑทรัพย์",
+  "citizenId": 3400700727702,
+  "name": "นายณัฐพัชร์  วงศ์พัฒนาธนเดช",
   "district": "เมือง 1",
   "pollingPlace": "ร.ร.เทศบาลสามัคคีวิทยา",
   "centerNo": 2,
@@ -971,84 +1040,20 @@
   "BeforeAffiliationName": "บำนาญ อ.แกดำ"
  },
  {
-  "citizenId": 3440600942032,
-  "name": "นายกฤติพงศ์  สัตพันธุ์",
-  "district": "บรบือ",
-  "pollingPlace": "ร.ร.บ้านบรบือ",
-  "centerNo": 10,
-  "centerName": "บำนาญ อ.บรบือ หน่วยที่ 3",
-  "affiliationNo": 2,
-  "affiliationName": "บำนาญ อ.บรบือ หน่วยที่ 3 (รายชื่อเพิ่มเติม)",
-  "listNo": 1,
-  "rights": "ผู้แทนสมาชิก",
-  "BeforeDistrict": "อ.โกสุมพิสัย",
-  "BeforeCenterNo": 11,
-  "BeforeCenterName": "บำนาญ อ.โกสุม หน่วยที่ 4",
-  "BeforeAffiliationName": "บำนาญ อ.โกสุม หน่วยที่ 4"
- },
- {
-  "citizenId": 3440700459465,
-  "name": "นายสมร  จันทเขต",
-  "district": "นาเชือก",
-  "pollingPlace": "ร.ร.เทศบาลนาเชือก",
-  "centerNo": 6,
-  "centerName": "บำนาญ อ.นาเชือก หน่วยที่ 2/บำนาญ ร.ร.เทศบาลนาเชือก",
-  "affiliationNo": 3,
-  "affiliationName": "บำนาญ อ.นาเชือก หน่วยที่ 2 (รายชื่อเพิ่มเติม)",
-  "listNo": 1,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก",
-  "BeforeDistrict": "อ.วาปีปทุม",
-  "BeforeCenterNo": 10,
-  "BeforeCenterName": "บำนาญ อ.วาปีปทุม หน่วยที่ 2",
-  "BeforeAffiliationName": "บำนาญ อ.วาปีปทุม หน่วยที่ 2"
- },
- {
-  "citizenId": 3449900040890,
-  "name": "นางทิพยวิมล  ดวงเวียงคำ",
-  "district": "เมือง 2",
-  "pollingPlace": "ร.ร.หลักเมือง",
-  "centerNo": 17,
-  "centerName": "บำนาญ อ.เมือง 2 หน่วยที่ 7",
-  "affiliationNo": 2,
-  "affiliationName": "บำนาญ อ.เมือง 2 หน่วยที่ 7 (รายชื่อเพิ่มเติม)",
-  "listNo": 3,
-  "rights": "ผู้แทนสมาชิก",
-  "BeforeDistrict": "อ.โกสุมพิสัย",
-  "BeforeCenterNo": 11,
-  "BeforeCenterName": "บำนาญ อ.โกสุม หน่วยที่ 4",
-  "BeforeAffiliationName": "บำนาญ อ.โกสุม หน่วยที่ 4"
- },
- {
-  "citizenId": 3449900046057,
-  "name": "นางมลิวัลย์  มองฤทธิ์",
+  "citizenId": 3440200236998,
+  "name": "นางไพบูลย์  ครุฑทรัพย์",
   "district": "เมือง 1",
   "pollingPlace": "ร.ร.เทศบาลสามัคคีวิทยา",
   "centerNo": 2,
   "centerName": "บำนาญ อ.เมือง 1 หน่วยที่ 2",
   "affiliationNo": 2,
   "affiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 2 (รายชื่อเพิ่มเติม)",
-  "listNo": 1,
+  "listNo": 19,
   "rights": "กรรมการ และ ผู้แทนสมาชิก",
-  "BeforeDistrict": "อ.เมือง 2",
-  "BeforeCenterNo": 12,
-  "BeforeCenterName": "บำนาญ อ.เมือง 2 หน่วยที่ 2",
-  "BeforeAffiliationName": "บำนาญ อ.เมือง 2 หน่วยที่ 2"
- },
- {
-  "citizenId": 3449900163878,
-  "name": "นายสันติ  ใหม่คามิ",
-  "district": "เมือง 1",
-  "pollingPlace": "ร.ร.เทศบาลสามัคคีวิทยา",
-  "centerNo": 2,
-  "centerName": "บำนาญ อ.เมือง 1 หน่วยที่ 2",
-  "affiliationNo": 2,
-  "affiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 2 (รายชื่อเพิ่มเติม)",
-  "listNo": 6,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก",
-  "BeforeDistrict": "อ.เมือง 1",
-  "BeforeCenterNo": 1,
-  "BeforeCenterName": "บำนาญ อ.เมือง 1 หน่วยที่ 1",
-  "BeforeAffiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 1"
+  "BeforeDistrict": "อ.แกดำ",
+  "BeforeCenterNo": 3,
+  "BeforeCenterName": "บำนาญ อ.แกดำ",
+  "BeforeAffiliationName": "บำนาญ อ.แกดำ"
  },
  {
   "citizenId": 3449900275633,
@@ -1083,20 +1088,628 @@
   "BeforeAffiliationName": "บำนาญ อ.แกดำ"
  },
  {
-  "citizenId": 3460300213906,
-  "name": "นายจำรัส  คำทอง",
+  "citizenId": 1449900405654,
+  "name": "นายธนาวัฒน์  ชนะมาร",
+  "district": "เมือง 2",
+  "pollingPlace": "ร.ร.สารคามพิทยาคม",
+  "centerNo": 5,
+  "centerName": "ร.ร.สารคามพิทยาคม",
+  "affiliationNo": 2,
+  "affiliationName": "ร.ร.สารคามพิทยาคม (รายชื่อเพิ่มเติม)",
+  "listNo": 4,
+  "rights": "ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.โกสุมพิสัย",
+  "BeforeCenterNo": 1,
+  "BeforeCenterName": "ศูนย์โกสัมพี/ร.ร.โกสุมวิทยาสรรค์",
+  "BeforeAffiliationName": "ร.ร.โกสุมวิทยาสรรค์"
+ },
+ {
+  "citizenId": 1440100118709,
+  "name": "นางสาวพัชรินทร์  โมหา",
+  "district": "เมือง 2",
+  "pollingPlace": "ร.ร.ผดุงนารี",
+  "centerNo": 6,
+  "centerName": "ร.ร.ผดุงนารี",
+  "affiliationNo": 2,
+  "affiliationName": "ร.ร.ผดุงนารี (รายชื่อเพิ่มเติม)",
+  "listNo": 5,
+  "rights": "ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.โกสุมพิสัย",
+  "BeforeCenterNo": 3,
+  "BeforeCenterName": "ศูนย์แพงงามบอนสวรรค์",
+  "BeforeAffiliationName": "ร.ร.โพนงามพิทยานุกูล"
+ },
+ {
+  "citizenId": 3440500320765,
+  "name": "นางสาวสุดารัตน์  กองเพชร",
+  "district": "ชื่นชม",
+  "pollingPlace": "ร.ร.ชื่นชมพิทยาคาร",
+  "centerNo": 1,
+  "centerName": "ศูนย์ชื่นชม/ร.ร.ชื่นชมพิทยาคาร/ร.ร.เทศบาลตำบลหนองกุง",
+  "affiliationNo": 15,
+  "affiliationName": "ร.ร.ชื่นชมพิทยาคาร (รายชื่อเพิ่มเติม)",
+  "listNo": 2,
+  "rights": "ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.โกสุมพิสัย",
+  "BeforeCenterNo": 3,
+  "BeforeCenterName": "ศูนย์แพงงามบอนสวรรค์",
+  "BeforeAffiliationName": "ร.ร.โพนงามพิทยานุกูล"
+ },
+ {
+  "citizenId": 2449900022869,
+  "name": "นางสาวเสาวลักษณ์  อุประ",
+  "district": "บรบือ",
+  "pollingPlace": "ร.ร.บรบือวิทยาคาร",
+  "centerNo": 1,
+  "centerName": "ร.ร.บรบือวิทยาคาร/ร.ร.บรบือ/ร.ร.โนนราษีวิทยา/ร.ร.เทศบาลตําบลบรบือ",
+  "affiliationNo": 5,
+  "affiliationName": "ร.ร.บรบือวิทยาคาร (รายชื่อเพิ่มเติม)",
+  "listNo": 3,
+  "rights": "ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.โกสุมพิสัย",
+  "BeforeCenterNo": 4,
+  "BeforeCenterName": "ศูนย์วังยาวเขวาไร่ดอนกลาง",
+  "BeforeAffiliationName": "ร.ร.เขวาไร่ศึกษา"
+ },
+ {
+  "citizenId": 1440600044429,
+  "name": "นางสาวรัฎชญา  แก้วสุวรรณ",
+  "district": "บรบือ",
+  "pollingPlace": "ร.ร.บรบือวิทยาคาร",
+  "centerNo": 1,
+  "centerName": "ร.ร.บรบือวิทยาคาร/ร.ร.บรบือ/ร.ร.โนนราษีวิทยา/ร.ร.เทศบาลตําบลบรบือ",
+  "affiliationNo": 5,
+  "affiliationName": "ร.ร.บรบือวิทยาคาร (รายชื่อเพิ่มเติม)",
+  "listNo": 5,
+  "rights": "ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.โกสุมพิสัย",
+  "BeforeCenterNo": 4,
+  "BeforeCenterName": "ศูนย์วังยาวเขวาไร่ดอนกลาง",
+  "BeforeAffiliationName": "ร.ร.วังยาวศึกษาวิทย์"
+ },
+ {
+  "citizenId": 1409900170177,
+  "name": "นางสาวพลอยไพลิน  ใหม่คามิ",
+  "district": "นาเชือก",
+  "pollingPlace": "ร.ร.นาเชือกพิทยาสรรค์",
+  "centerNo": 4,
+  "centerName": "กลุ่ม ร.ร.มัธยม",
+  "affiliationNo": 4,
+  "affiliationName": "ร.ร.นาเชือกพิทยาสรรค์ (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.โกสุมพิสัย",
+  "BeforeCenterNo": 4,
+  "BeforeCenterName": "ศูนย์วังยาวเขวาไร่ดอนกลาง",
+  "BeforeAffiliationName": "ร.ร.เขวาไร่ศึกษา"
+ },
+ {
+  "citizenId": 1449900295719,
+  "name": "นางสาวจินตนา  ดวงศรี",
+  "district": "แกดำ",
+  "pollingPlace": "ร.ร.มิตรภาพ",
+  "centerNo": 2,
+  "centerName": "ศูนย์ 12 มิตรภาพ/ร.ร.มิตรภาพ",
+  "affiliationNo": 12,
+  "affiliationName": "ร.ร.บ้านโสกแดง (รายชื่อเพิ่มเติม)",
+  "listNo": 2,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.โกสุมพิสัย",
+  "BeforeCenterNo": 4,
+  "BeforeCenterName": "ศูนย์วังยาวเขวาไร่ดอนกลาง",
+  "BeforeAffiliationName": "ร.ร.บ้านวังโพน"
+ },
+ {
+  "citizenId": 1400900222951,
+  "name": "นางสาวนงนุช  วิชาผา",
+  "district": "ชื่นชม",
+  "pollingPlace": "ร.ร.ชื่นชมพิทยาคาร",
+  "centerNo": 1,
+  "centerName": "ศูนย์ชื่นชม/ร.ร.ชื่นชมพิทยาคาร/ร.ร.เทศบาลตำบลหนองกุง",
+  "affiliationNo": 15,
+  "affiliationName": "ร.ร.ชื่นชมพิทยาคาร (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.โกสุมพิสัย",
+  "BeforeCenterNo": 4,
+  "BeforeCenterName": "ศูนย์วังยาวเขวาไร่ดอนกลาง",
+  "BeforeAffiliationName": "ร.ร.เขวาไร่ศึกษา"
+ },
+ {
+  "citizenId": 1440300002607,
+  "name": "นางสาวศิริญญา  สุโพธิ์คำ",
+  "district": "โกสุมพิสัย",
+  "pollingPlace": "ร.ร.ศรีโกสุมวิทยาฯ",
+  "centerNo": 1,
+  "centerName": "ศูนย์โกสัมพี/ร.ร.โกสุมวิทยาสรรค์",
+  "affiliationNo": 13,
+  "affiliationName": "ร.ร.ศรีโกสุมวิทยามิตรภาพที่ 209 (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.โกสุมพิสัย",
+  "BeforeCenterNo": 6,
+  "BeforeCenterName": "ศูนย์วังมัจฉา",
+  "BeforeAffiliationName": "ร.ร.บ้านแห่บริหารวิทย์"
+ },
+ {
+  "citizenId": 3449900040890,
+  "name": "นางทิพยวิมล  ดวงเวียงคำ",
+  "district": "เมือง 2",
+  "pollingPlace": "ร.ร.หลักเมือง",
+  "centerNo": 17,
+  "centerName": "บำนาญ อ.เมือง 2 หน่วยที่ 7",
+  "affiliationNo": 2,
+  "affiliationName": "บำนาญ อ.เมือง 2 หน่วยที่ 7 (รายชื่อเพิ่มเติม)",
+  "listNo": 3,
+  "rights": "ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.โกสุมพิสัย",
+  "BeforeCenterNo": 11,
+  "BeforeCenterName": "บำนาญ อ.โกสุม หน่วยที่ 4",
+  "BeforeAffiliationName": "บำนาญ อ.โกสุม หน่วยที่ 4"
+ },
+ {
+  "citizenId": 3440600942032,
+  "name": "นายกฤติพงศ์  สัตพันธุ์",
+  "district": "บรบือ",
+  "pollingPlace": "ร.ร.บ้านบรบือ",
+  "centerNo": 10,
+  "centerName": "บำนาญ อ.บรบือ หน่วยที่ 3",
+  "affiliationNo": 2,
+  "affiliationName": "บำนาญ อ.บรบือ หน่วยที่ 3 (รายชื่อเพิ่มเติม)",
+  "listNo": 2,
+  "rights": "ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.โกสุมพิสัย",
+  "BeforeCenterNo": 11,
+  "BeforeCenterName": "บำนาญ อ.โกสุม หน่วยที่ 4",
+  "BeforeAffiliationName": "บำนาญ อ.โกสุม หน่วยที่ 4"
+ },
+ {
+  "citizenId": 1449900402477,
+  "name": "นางสาวนิศารัตน์  คงคำ",
+  "district": "เมือง 2",
+  "pollingPlace": "ร.ร.บ้านเขวา(รัฐประชาวิทยากร)",
+  "centerNo": 3,
+  "centerName": "ศูนย์ 3 เขวา ท่าตูม ห้วยแอ่ง",
+  "affiliationNo": 13,
+  "affiliationName": "ร.ร.บ้านเขวา(รัฐประชาวิทยากร) (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.ชื่นชม",
+  "BeforeCenterNo": 1,
+  "BeforeCenterName": "ศูนย์ชื่นชม",
+  "BeforeAffiliationName": "ร.ร.บ้านหนองนาไร่เดียว  "
+ },
+ {
+  "citizenId": 1409901020641,
+  "name": "นายจรุงศักดิ์  รักษาเคน",
+  "district": "โกสุมพิสัย",
+  "pollingPlace": "ร.ร.ศรีโกสุมวิทยาฯ",
+  "centerNo": 1,
+  "centerName": "ศูนย์โกสัมพี/ร.ร.โกสุมวิทยาสรรค์",
+  "affiliationNo": 13,
+  "affiliationName": "ร.ร.บ้านแก้งขิงแคง (รายชื่อเพิ่มเติม)",
+  "listNo": 3,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.ชื่นชม",
+  "BeforeCenterNo": 1,
+  "BeforeCenterName": "ศูนย์ชื่นชม",
+  "BeforeAffiliationName": "ร.ร.บ้านผือ  "
+ },
+ {
+  "citizenId": 3440500425222,
+  "name": "นางพรรณี  เพชรน้อย",
   "district": "เมือง 1",
   "pollingPlace": "ร.ร.เทศบาลสามัคคีวิทยา",
   "centerNo": 2,
   "centerName": "บำนาญ อ.เมือง 1 หน่วยที่ 2",
   "affiliationNo": 2,
   "affiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 2 (รายชื่อเพิ่มเติม)",
+  "listNo": 8,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.เชียงยืน",
+  "BeforeCenterNo": 1,
+  "BeforeCenterName": "ศูนย์เชียงยืนเสือเฒ่า",
+  "BeforeAffiliationName": "ร.ร.บ้านเชียงยืน"
+ },
+ {
+  "citizenId": 3460400038600,
+  "name": "นายนิรุต  ชวนจิตร",
+  "district": "ยางสีสุราช",
+  "pollingPlace": "ร.ร.อนุบาลดงเมืองน้อย",
+  "centerNo": 1,
+  "centerName": "กลุ่ม 15/ร.ร.มัธยมยางสีสุราช",
+  "affiliationNo": 13,
+  "affiliationName": "ร.ร.บ้านโนนรัง (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.นาเชือก",
+  "BeforeCenterNo": 1,
+  "BeforeCenterName": "กลุ่ม 10",
+  "BeforeAffiliationName": "ร.ร.บ้านโคกก่องโคกสูงหนองแต้"
+ },
+ {
+  "citizenId": 1449900243468,
+  "name": "นางสาววัลลภา  ปะติกานัง",
+  "district": "นาเชือก",
+  "pollingPlace": "ร.ร.บ้านหนองโพธิ์",
+  "centerNo": 3,
+  "centerName": "กลุ่ม 12",
+  "affiliationNo": 12,
+  "affiliationName": "ร.ร.บ้านปลาขาว (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.นาเชือก",
+  "BeforeCenterNo": 2,
+  "BeforeCenterName": "กลุ่ม 11/ร.ร.เทศบาลนาเชือก",
+  "BeforeAffiliationName": "ร.ร.บ้านเขวาไร่(ดรุณวิทยา)"
+ },
+ {
+  "citizenId": 1440900029549,
+  "name": "นางอัจฉรา  ตาลพวง",
+  "district": "วาปีปทุม",
+  "pollingPlace": "ร.ร.บ้านนาข่า",
+  "centerNo": 3,
+  "centerName": "กลุ่ม 3",
+  "affiliationNo": 13,
+  "affiliationName": "ร.ร.บ้านวังจานโนนสำราญ (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.นาเชือก",
+  "BeforeCenterNo": 2,
+  "BeforeCenterName": "กลุ่ม 11/ร.ร.เทศบาลนาเชือก",
+  "BeforeAffiliationName": "ร.ร.บ้านหนองม่วง"
+ },
+ {
+  "citizenId": 1440900087654,
+  "name": "นางธัญญธร  หมื่นไธสง",
+  "district": "นาเชือก",
+  "pollingPlace": "ร.ร.บ้านปอพาน",
+  "centerNo": 1,
+  "centerName": "กลุ่ม 10",
+  "affiliationNo": 14,
+  "affiliationName": "ร.ร.บ้านปอพานหนองโน (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.นาเชือก",
+  "BeforeCenterNo": 3,
+  "BeforeCenterName": "กลุ่ม 12",
+  "BeforeAffiliationName": "ร.ร.บ้านปลาขาว"
+ },
+ {
+  "citizenId": 3440500616273,
+  "name": "นายชัยยศ  โพธิรส",
+  "district": "เชียงยืน",
+  "pollingPlace": "ร.ร.บ้านโจดบัวบาน",
+  "centerNo": 2,
+  "centerName": "ศูนย์กู่ทอง",
+  "affiliationNo": 11,
+  "affiliationName": "ร.ร.บ้านหนองมันปลา (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.นาเชือก",
+  "BeforeCenterNo": 3,
+  "BeforeCenterName": "กลุ่ม 12",
+  "BeforeAffiliationName": "ร.ร.บ้านกระต่ายร้านหญ้าโนนสวัสดิ์"
+ },
+ {
+  "citizenId": 1449900288950,
+  "name": "นายภวนันท์ชัย  สวัสดิ์สละ",
+  "district": "เมือง 2",
+  "pollingPlace": "ร.ร.ผดุงนารี",
+  "centerNo": 6,
+  "centerName": "ร.ร.ผดุงนารี",
+  "affiliationNo": 2,
+  "affiliationName": "ร.ร.ผดุงนารี (รายชื่อเพิ่มเติม)",
+  "listNo": 2,
+  "rights": "ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.นาเชือก",
+  "BeforeCenterNo": 4,
+  "BeforeCenterName": "กลุ่ม ร.ร.มัธยม",
+  "BeforeAffiliationName": "ร.ร.นาเชือกพิทยาสรรค์"
+ },
+ {
+  "citizenId": 1440100117575,
+  "name": "นางสาวกาญจนา  พิมพ์แสง",
+  "district": "เมือง 2",
+  "pollingPlace": "ร.ร.ผดุงนารี",
+  "centerNo": 6,
+  "centerName": "ร.ร.ผดุงนารี",
+  "affiliationNo": 2,
+  "affiliationName": "ร.ร.ผดุงนารี (รายชื่อเพิ่มเติม)",
+  "listNo": 3,
+  "rights": "ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.นาเชือก",
+  "BeforeCenterNo": 4,
+  "BeforeCenterName": "กลุ่ม ร.ร.มัธยม",
+  "BeforeAffiliationName": "ร.ร.นาเชือกพิทยาสรรค์"
+ },
+ {
+  "citizenId": 3440900239957,
+  "name": "นายสุริยา  สีลาปัง",
+  "district": "วาปีปทุม",
+  "pollingPlace": "ร.ร.เมืองวาปีปทุม",
+  "centerNo": 7,
+  "centerName": "กลุ่มมัธยม อบจ.",
+  "affiliationNo": 6,
+  "affiliationName": "ร.ร.เสือโก้กวิทยาสรรค์ (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.นาเชือก",
+  "BeforeCenterNo": 4,
+  "BeforeCenterName": "กลุ่ม ร.ร.มัธยม",
+  "BeforeAffiliationName": "ร.ร.หนองโพธิ์วิทยาคม"
+ },
+ {
+  "citizenId": 1440900104371,
+  "name": "นางสาวพชรอร  เทียมสม",
+  "district": "วาปีปทุม",
+  "pollingPlace": "ร.ร.บ้านหนองกุง",
+  "centerNo": 4,
+  "centerName": "กลุ่ม 4",
+  "affiliationNo": 14,
+  "affiliationName": "ร.ร.บ้านดงน้อย (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.นาดูน",
+  "BeforeCenterNo": 1,
+  "BeforeCenterName": "กลุ่ม 13/กลุ่ม ร.ร.มัธยม/กลุ่ม ร.ร.เทศบาล",
+  "BeforeAffiliationName": "ร.ร.บ้านเครือซูด"
+ },
+ {
+  "citizenId": 1309900263371,
+  "name": "นางสาวกนกวรรณ  เยี่ยงวิญญู",
+  "district": "เมือง 1",
+  "pollingPlace": "ร.ร.เทศบาลสามัคคีวิทยา",
+  "centerNo": 2,
+  "centerName": "บำนาญ อ.เมือง 1 หน่วยที่ 2",
+  "affiliationNo": 2,
+  "affiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 2 (รายชื่อเพิ่มเติม)",
+  "listNo": 13,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.บรบือ",
+  "BeforeCenterNo": 1,
+  "BeforeCenterName": "ร.ร.บรบือวิทยาคาร/ร.ร.บรบือ",
+  "BeforeAffiliationName": "ร.ร.บรบือ"
+ },
+ {
+  "citizenId": 1469900068160,
+  "name": "นางสาวลภัสรดา  ปะสังคะเต",
+  "district": "เมือง 2",
+  "pollingPlace": "ร.ร.สารคามพิทยาคม",
+  "centerNo": 5,
+  "centerName": "ร.ร.สารคามพิทยาคม",
+  "affiliationNo": 2,
+  "affiliationName": "ร.ร.สารคามพิทยาคม (รายชื่อเพิ่มเติม)",
+  "listNo": 2,
+  "rights": "ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.บรบือ",
+  "BeforeCenterNo": 1,
+  "BeforeCenterName": "ร.ร.บรบือวิทยาคาร/ร.ร.บรบือ",
+  "BeforeAffiliationName": "ร.ร.บรบือ"
+ },
+ {
+  "citizenId": 1440300118346,
+  "name": "นางสาวอาภาภรณ์  สอนทะเดช",
+  "district": "โกสุมพิสัย",
+  "pollingPlace": "ร.ร.ศรีโกสุมวิทยาฯ",
+  "centerNo": 1,
+  "centerName": "ศูนย์โกสัมพี/ร.ร.โกสุมวิทยาสรรค์",
+  "affiliationNo": 13,
+  "affiliationName": "ร.ร.โกสุมวิทยาสรรค์ (รายชื่อเพิ่มเติม)",
   "listNo": 5,
   "rights": "กรรมการ และ ผู้แทนสมาชิก",
-  "BeforeDistrict": "อ.กันทรวิชัย",
+  "BeforeDistrict": "อ.บรบือ",
+  "BeforeCenterNo": 1,
+  "BeforeCenterName": "ร.ร.บรบือวิทยาคาร/ร.ร.บรบือ",
+  "BeforeAffiliationName": "ร.ร.บรบือ"
+ },
+ {
+  "citizenId": 1449900286663,
+  "name": "นางชนิสรา  ชุมวงศ์",
+  "district": "เมือง 2",
+  "pollingPlace": "ร.ร.อนุบาลมหาสารคาม",
+  "centerNo": 9,
+  "centerName": "ศูนย์ 6 อนุบาลท่าแก่ง",
+  "affiliationNo": 10,
+  "affiliationName": "ร.ร.อนุบาลมหาสารคาม (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.บรบือ",
+  "BeforeCenterNo": 2,
+  "BeforeCenterName": "ศูนย์ 13 หนองสิมวังไชยวังใหม่",
+  "BeforeAffiliationName": "ร.ร.บ้านโนนทอง"
+ },
+ {
+  "citizenId": 1449900334951,
+  "name": "นางสาวสุภาวดี  กุลาศรี",
+  "district": "เมือง 2",
+  "pollingPlace": "ร.ร.อนุบาลมหาสารคาม",
+  "centerNo": 9,
+  "centerName": "ศูนย์ 6 อนุบาลท่าแก่ง",
+  "affiliationNo": 10,
+  "affiliationName": "ร.ร.บ้านท่าสองคอน (รายชื่อเพิ่มเติม)",
+  "listNo": 2,
+  "rights": "ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.บรบือ",
+  "BeforeCenterNo": 2,
+  "BeforeCenterName": "ศูนย์ 13 หนองสิมวังไชยวังใหม่",
+  "BeforeAffiliationName": "ร.ร.บ้านโนนทอง"
+ },
+ {
+  "citizenId": 3440400005744,
+  "name": "นางสาวนุจรินทร์  อิ่มเสถียร",
+  "district": "กันทรวิชัย",
+  "pollingPlace": "ร.ร.อนุบาลกันทรวิชัย",
+  "centerNo": 3,
+  "centerName": "ศูนย์ 9 มิ่งเมือง",
+  "affiliationNo": 10,
+  "affiliationName": "ร.ร.บ้านสมศรีมะแปบประชาบำรุง (รายชื่อเพิ่มเติม)",
+  "listNo": 2,
+  "rights": "ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.บรบือ",
+  "BeforeCenterNo": 3,
+  "BeforeCenterName": "ศูนย์ 14 ราษีระบือ",
+  "BeforeAffiliationName": "ร.ร.บ้านโคกกลางบ่อหลุบ"
+ },
+ {
+  "citizenId": 3440100415173,
+  "name": "นางรำไพ  มะปะเต",
+  "district": "เมือง 2",
+  "pollingPlace": "ร.ร.ผดุงนารี",
+  "centerNo": 6,
+  "centerName": "ร.ร.ผดุงนารี",
+  "affiliationNo": 2,
+  "affiliationName": "ร.ร.ผดุงนารี (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.บรบือ",
+  "BeforeCenterNo": 4,
+  "BeforeCenterName": "ศูนย์ 15 บรบือบ่อใหญ่หนองโก",
+  "BeforeAffiliationName": "ร.ร.บ้านบ่อใหญ่(บ่อใหญ่เรืองศิลป์)"
+ },
+ {
+  "citizenId": 1449900036390,
+  "name": "นางสาวอภิรัชพร  ทิ้งแสน",
+  "district": "เมือง 2",
+  "pollingPlace": "ร.ร.สารคามพิทยาคม",
+  "centerNo": 5,
+  "centerName": "ร.ร.สารคามพิทยาคม",
+  "affiliationNo": 2,
+  "affiliationName": "ร.ร.สารคามพิทยาคม (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.บรบือ",
+  "BeforeCenterNo": 5,
+  "BeforeCenterName": "ศูนย์ 16 หนองจิกกำพี้",
+  "BeforeAffiliationName": "ร.ร.บ้านเหล่ายาว"
+ },
+ {
+  "citizenId": 3450100349014,
+  "name": "นางอำพร  โพธิ์สุวรรณ",
+  "district": "แกดำ",
+  "pollingPlace": "ร.ร.มิตรภาพ",
+  "centerNo": 2,
+  "centerName": "ศูนย์ 12 มิตรภาพ/ร.ร.มิตรภาพ",
+  "affiliationNo": 12,
+  "affiliationName": "ร.ร.บ้านโพนละออม (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.บรบือ",
+  "BeforeCenterNo": 6,
+  "BeforeCenterName": "ศูนย์ 17 โนนแดงหนองคูขาด",
+  "BeforeAffiliationName": "ร.ร.บ้านศาลา"
+ },
+ {
+  "citizenId": 3440601227850,
+  "name": "นางจูริก  ทักษิณ",
+  "district": "บรบือ",
+  "pollingPlace": "ร.ร.บ้านบรบือ",
+  "centerNo": 10,
+  "centerName": "บำนาญ อ.บรบือ หน่วยที่ 3",
+  "affiliationNo": 2,
+  "affiliationName": "บำนาญ อ.บรบือ หน่วยที่ 3 (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.บรบือ",
   "BeforeCenterNo": 7,
-  "BeforeCenterName": "บำนาญ อ.กันทรวิชัย หน่วยที่ 2",
-  "BeforeAffiliationName": "บำนาญ อ.กันทรวิชัย หน่วยที่ 2"
+  "BeforeCenterName": "ศูนย์ 18 ลุ่มน้ำเสียว",
+  "BeforeAffiliationName": "ร.ร.บ้านหนองขามแสบง"
+ },
+ {
+  "citizenId": 1440900030695,
+  "name": "นางสาวพรเพ็ญ  นินทะราช",
+  "district": "วาปีปทุม",
+  "pollingPlace": "ร.ร.บ้านชาดฝางหัวเรือ",
+  "centerNo": 5,
+  "centerName": "กลุ่ม 5",
+  "affiliationNo": 11,
+  "affiliationName": "ร.ร.บ้านหนองบัวกุดอ้อ (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.พยัคฆ์ฯ",
+  "BeforeCenterNo": 1,
+  "BeforeCenterName": "กลุ่ม 6",
+  "BeforeAffiliationName": "ร.ร.บ้านโนนม่วงท่าพลับพลา"
+ },
+ {
+  "citizenId": 1459900541515,
+  "name": "นางสาวมินตรา  ปาสานะโก",
+  "district": "วาปีปทุม",
+  "pollingPlace": "ร.ร.บ้านชาดฝางหัวเรือ",
+  "centerNo": 5,
+  "centerName": "กลุ่ม 5",
+  "affiliationNo": 11,
+  "affiliationName": "ร.ร.ราชประชานุเคราะห์ 16 (รายชื่อเพิ่มเติม)",
+  "listNo": 2,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.พยัคฆ์ฯ",
+  "BeforeCenterNo": 1,
+  "BeforeCenterName": "กลุ่ม 6",
+  "BeforeAffiliationName": "ร.ร.บ้านดง"
+ },
+ {
+  "citizenId": 1450300069094,
+  "name": "นางสาวจริยาภรณ์  ภูวิจักร์",
+  "district": "พยัคฆภูมิพิสัย",
+  "pollingPlace": "ร.ร.บ้านหนองสนมดอนติ้ว",
+  "centerNo": 3,
+  "centerName": "กลุ่ม 8",
+  "affiliationNo": 14,
+  "affiliationName": "ร.ร.บ้านเตาบ่า (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.พยัคฆ์ฯ",
+  "BeforeCenterNo": 2,
+  "BeforeCenterName": "กลุ่ม 7",
+  "BeforeAffiliationName": "ร.ร.บ้านเก่าน้อยป่าชาดโนนเพ็ก"
+ },
+ {
+  "citizenId": 3441000097278,
+  "name": "นางชนากานต์  กาหลง",
+  "district": "นาดูน",
+  "pollingPlace": "ร.ร.นาดูนประชาสรรพ์",
+  "centerNo": 1,
+  "centerName": "กลุ่ม 13/กลุ่ม ร.ร.มัธยม/กลุ่ม ร.ร.เทศบาล",
+  "affiliationNo": 19,
+  "affiliationName": "ร.ร.บ้านหนองไผ่ด้ามขวาน (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.พยัคฆ์ฯ",
+  "BeforeCenterNo": 3,
+  "BeforeCenterName": "กลุ่ม 8",
+  "BeforeAffiliationName": "ร.ร.บ้านเขวาทุ่ง"
+ },
+ {
+  "citizenId": 3450500442984,
+  "name": "นางสาวพรวัฒนา  ศรีคำภา",
+  "district": "เมือง 2",
+  "pollingPlace": "ร.ร.ผดุงนารี",
+  "centerNo": 6,
+  "centerName": "ร.ร.ผดุงนารี",
+  "affiliationNo": 2,
+  "affiliationName": "ร.ร.ผดุงนารี (รายชื่อเพิ่มเติม)",
+  "listNo": 4,
+  "rights": "ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.พยัคฆ์ฯ",
+  "BeforeCenterNo": 5,
+  "BeforeCenterName": "กลุ่ม ร.ร.มัธยม",
+  "BeforeAffiliationName": "ร.ร.พยัคฆภูมิวิทยาคาร"
+ },
+ {
+  "citizenId": 3440900320479,
+  "name": "นางสาวจารุวรรณ  สาขจร",
+  "district": "วาปีปทุม",
+  "pollingPlace": "ร.ร.วาปีปทุม",
+  "centerNo": 6,
+  "centerName": "กลุ่มมัธยมศึกษา",
+  "affiliationNo": 4,
+  "affiliationName": "ร.ร.วาปีปทุม (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.พยัคฆ์ฯ",
+  "BeforeCenterNo": 5,
+  "BeforeCenterName": "กลุ่ม ร.ร.มัธยม",
+  "BeforeAffiliationName": "ร.ร.พยัคฆภูมิวิทยาคาร"
  },
  {
   "citizenId": 3460500136913,
@@ -1113,6 +1726,614 @@
   "BeforeCenterNo": 1,
   "BeforeCenterName": "บำนาญ อ.เมือง 1 หน่วยที่ 1",
   "BeforeAffiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 1"
+ },
+ {
+  "citizenId": 3449900163878,
+  "name": "นายสันติ  ใหม่คามิ",
+  "district": "เมือง 1",
+  "pollingPlace": "ร.ร.เทศบาลสามัคคีวิทยา",
+  "centerNo": 2,
+  "centerName": "บำนาญ อ.เมือง 1 หน่วยที่ 2",
+  "affiliationNo": 2,
+  "affiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 2 (รายชื่อเพิ่มเติม)",
+  "listNo": 6,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.เมือง 1",
+  "BeforeCenterNo": 1,
+  "BeforeCenterName": "บำนาญ อ.เมือง 1 หน่วยที่ 1",
+  "BeforeAffiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 1"
+ },
+ {
+  "citizenId": 3149900165211,
+  "name": "นางธนะวดี  พรมศาลา",
+  "district": "เมือง 1",
+  "pollingPlace": "ร.ร.เทศบาลสามัคคีวิทยา",
+  "centerNo": 2,
+  "centerName": "บำนาญ อ.เมือง 1 หน่วยที่ 2",
+  "affiliationNo": 2,
+  "affiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 2 (รายชื่อเพิ่มเติม)",
+  "listNo": 7,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.เมือง 1",
+  "BeforeCenterNo": 1,
+  "BeforeCenterName": "บำนาญ อ.เมือง 1 หน่วยที่ 1",
+  "BeforeAffiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 1"
+ },
+ {
+  "citizenId": 3449900277547,
+  "name": "นายทรงศักดิ์  ทุงจันทร์",
+  "district": "เมือง 2",
+  "pollingPlace": "กองการศึกษา อบจ.",
+  "centerNo": 10,
+  "centerName": "กองการศึกษา อบจ./ร.ร.โคกก่อพิทยาคม/ร.ร.เกิ้งวิทยานุกูล",
+  "affiliationNo": 4,
+  "affiliationName": "กองการศึกษา อบจ. (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.เมือง 1",
+  "BeforeCenterNo": 1,
+  "BeforeCenterName": "บำนาญ อ.เมือง 1 หน่วยที่ 1",
+  "BeforeAffiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 1"
+ },
+ {
+  "citizenId": 1509900372364,
+  "name": "นางดาราลักษณ์  เอกโชติ",
+  "district": "เมือง 1",
+  "pollingPlace": "สนง.ส่งเสริมการเรียนรู้",
+  "centerNo": 11,
+  "centerName": "สนง.ส่งเสริมการเรียนรู้",
+  "affiliationNo": 3,
+  "affiliationName": "ศูนย์การศึกษาพิเศษ (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.เมือง 1",
+  "BeforeCenterNo": 2,
+  "BeforeCenterName": "บำนาญ อ.เมือง 1 หน่วยที่ 2",
+  "BeforeAffiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 2"
+ },
+ {
+  "citizenId": 1360700091055,
+  "name": "นางสาวพรสิริภัสร์  สิทธิพล",
+  "district": "โกสุมพิสัย",
+  "pollingPlace": "ร.ร.ศรีโกสุมวิทยาฯ",
+  "centerNo": 1,
+  "centerName": "ศูนย์โกสัมพี/ร.ร.โกสุมวิทยาสรรค์",
+  "affiliationNo": 13,
+  "affiliationName": "ร.ร.บ้านหนองกุงวันดีประชาสรรค์ (รายชื่อเพิ่มเติม)",
+  "listNo": 4,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.เมือง 1",
+  "BeforeCenterNo": 2,
+  "BeforeCenterName": "บำนาญ อ.เมือง 1 หน่วยที่ 2",
+  "BeforeAffiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 2"
+ },
+ {
+  "citizenId": 3440400106443,
+  "name": "นายวิทูลย์  คำภวา",
+  "district": "เมือง 1",
+  "pollingPlace": "ร.ร.เทศบาลบูรพาพิทยาคาร",
+  "centerNo": 7,
+  "centerName": "บำนาญสังกัดเทศบาล ",
+  "affiliationNo": 2,
+  "affiliationName": "บำนาญเทศบาล (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.เมือง 1",
+  "BeforeCenterNo": 6,
+  "BeforeCenterName": "โรงเรียนในสังกัดเทศบาล",
+  "BeforeAffiliationName": "ร.ร.เทศบาลบ้านค้อ  "
+ },
+ {
+  "citizenId": 3449900117400,
+  "name": "นายณัฐเมธินทร์  พุทธัสสะ",
+  "district": "เมือง 1",
+  "pollingPlace": "ร.ร.เทศบาลสามัคคีวิทยา",
+  "centerNo": 2,
+  "centerName": "บำนาญ อ.เมือง 1 หน่วยที่ 2",
+  "affiliationNo": 2,
+  "affiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 2 (รายชื่อเพิ่มเติม)",
+  "listNo": 10,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.เมือง 1",
+  "BeforeCenterNo": 6,
+  "BeforeCenterName": "โรงเรียนในสังกัดเทศบาล",
+  "BeforeAffiliationName": "ร.ร.เทศบาลสามัคคีวิทยา  "
+ },
+ {
+  "citizenId": 3411200887311,
+  "name": "นางเกตุนภัส  อุดมชัย",
+  "district": "เมือง 1",
+  "pollingPlace": "ร.ร.เทศบาลสามัคคีวิทยา",
+  "centerNo": 2,
+  "centerName": "บำนาญ อ.เมือง 1 หน่วยที่ 2",
+  "affiliationNo": 2,
+  "affiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 2 (รายชื่อเพิ่มเติม)",
+  "listNo": 11,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.เมือง 1",
+  "BeforeCenterNo": 6,
+  "BeforeCenterName": "โรงเรียนในสังกัดเทศบาล",
+  "BeforeAffiliationName": "ร.ร.เทศบาลบูรพาพิทยาคาร  "
+ },
+ {
+  "citizenId": 3449900061447,
+  "name": "นายณัฐภูมิ  ศิริพล",
+  "district": "เมือง 1",
+  "pollingPlace": "ร.ร.เทศบาลสามัคคีวิทยา",
+  "centerNo": 2,
+  "centerName": "บำนาญ อ.เมือง 1 หน่วยที่ 2",
+  "affiliationNo": 2,
+  "affiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 2 (รายชื่อเพิ่มเติม)",
+  "listNo": 12,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.เมือง 1",
+  "BeforeCenterNo": 6,
+  "BeforeCenterName": "โรงเรียนในสังกัดเทศบาล",
+  "BeforeAffiliationName": "ร.ร.เทศบาลบูรพาพิทยาคาร  "
+ },
+ {
+  "citizenId": 1450100034335,
+  "name": "นางจิราภรณ์  หาญประชุม",
+  "district": "เมือง 1",
+  "pollingPlace": "ร.ร.เทศบาลสามัคคีวิทยา",
+  "centerNo": 2,
+  "centerName": "บำนาญ อ.เมือง 1 หน่วยที่ 2",
+  "affiliationNo": 2,
+  "affiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 2 (รายชื่อเพิ่มเติม)",
+  "listNo": 18,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.เมือง 1",
+  "BeforeCenterNo": 6,
+  "BeforeCenterName": "โรงเรียนในสังกัดเทศบาล",
+  "BeforeAffiliationName": "ร.ร.เทศบาลบ้านแมด  "
+ },
+ {
+  "citizenId": 1401700177936,
+  "name": "นายนภัทร  วัฒนาปัญญาสกุล",
+  "district": "เมือง 1",
+  "pollingPlace": "ร.ร.เทศบาลสามัคคีวิทยา",
+  "centerNo": 2,
+  "centerName": "บำนาญ อ.เมือง 1 หน่วยที่ 2",
+  "affiliationNo": 2,
+  "affiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 2 (รายชื่อเพิ่มเติม)",
+  "listNo": 17,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.เมือง 1",
+  "BeforeCenterNo": 11,
+  "BeforeCenterName": "สนง.ส่งเสริมการเรียนรู้",
+  "BeforeAffiliationName": "สนง.ส่งเสริมการเรียนรู้"
+ },
+ {
+  "citizenId": 3440100108998,
+  "name": "นางสาวสุภาวดี  ชุมแสง",
+  "district": "เมือง 2",
+  "pollingPlace": "ร.ร.บ้านโคกก่อ",
+  "centerNo": 1,
+  "centerName": "ศูนย์ 1 โคกก่อหนองโน",
+  "affiliationNo": 10,
+  "affiliationName": "ร.ร.บ้านหนองโนอีดำ (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.เมือง 2",
+  "BeforeCenterNo": 3,
+  "BeforeCenterName": "ศูนย์ 3 เขวา ท่าตูม ห้วยแอ่ง",
+  "BeforeAffiliationName": "ร.ร.บ้านท่าตูมดอนเรือ"
+ },
+ {
+  "citizenId": 5440600059879,
+  "name": "นางสุพิศ  รินทะชัย",
+  "district": "บรบือ",
+  "pollingPlace": "ร.ร.บรบือวิทยาคาร",
+  "centerNo": 1,
+  "centerName": "ร.ร.บรบือวิทยาคาร/ร.ร.บรบือ/ร.ร.โนนราษีวิทยา/ร.ร.เทศบาลตําบลบรบือ",
+  "affiliationNo": 5,
+  "affiliationName": "ร.ร.บรบือ (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.เมือง 2",
+  "BeforeCenterNo": 5,
+  "BeforeCenterName": "ร.ร.สารคามพิทยาคม",
+  "BeforeAffiliationName": "ร.ร.สารคามพิทยาคม"
+ },
+ {
+  "citizenId": 3102400315802,
+  "name": "นางแววดาว  ทดคุย",
+  "district": "เมือง 1",
+  "pollingPlace": "ร.ร.เทศบาลสามัคคีวิทยา",
+  "centerNo": 2,
+  "centerName": "บำนาญ อ.เมือง 1 หน่วยที่ 2",
+  "affiliationNo": 2,
+  "affiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 2 (รายชื่อเพิ่มเติม)",
+  "listNo": 14,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.เมือง 2",
+  "BeforeCenterNo": 10,
+  "BeforeCenterName": "กองการศึกษา อบจ.",
+  "BeforeAffiliationName": "กองการศึกษา อบจ."
+ },
+ {
+  "citizenId": 3449900046057,
+  "name": "นางมลิวัลย์  มองฤทธิ์",
+  "district": "เมือง 1",
+  "pollingPlace": "ร.ร.เทศบาลสามัคคีวิทยา",
+  "centerNo": 2,
+  "centerName": "บำนาญ อ.เมือง 1 หน่วยที่ 2",
+  "affiliationNo": 2,
+  "affiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 2 (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.เมือง 2",
+  "BeforeCenterNo": 12,
+  "BeforeCenterName": "บำนาญ อ.เมือง 2 หน่วยที่ 2",
+  "BeforeAffiliationName": "บำนาญ อ.เมือง 2 หน่วยที่ 2"
+ },
+ {
+  "citizenId": 3401300124343,
+  "name": "นางนวลละดา  นนสีลาด",
+  "district": "เมือง 1",
+  "pollingPlace": "ร.ร.เทศบาลสามัคคีวิทยา",
+  "centerNo": 2,
+  "centerName": "บำนาญ อ.เมือง 1 หน่วยที่ 2",
+  "affiliationNo": 2,
+  "affiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 2 (รายชื่อเพิ่มเติม)",
+  "listNo": 3,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.เมือง 2",
+  "BeforeCenterNo": 14,
+  "BeforeCenterName": "บำนาญ อ.เมือง 2 หน่วยที่ 4",
+  "BeforeAffiliationName": "บำนาญ อ.เมือง 2 หน่วยที่ 4"
+ },
+ {
+  "citizenId": 1440700089009,
+  "name": "นางสาวภิรมยา  โพธิ์รินทร์",
+  "district": "นาเชือก",
+  "pollingPlace": "ร.ร.บ้านปอพาน",
+  "centerNo": 1,
+  "centerName": "กลุ่ม 10",
+  "affiliationNo": 14,
+  "affiliationName": "ร.ร.ชุมชนบ้านสำโรง (รายชื่อเพิ่มเติม)",
+  "listNo": 2,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.ยางสีสุราช",
+  "BeforeCenterNo": 1,
+  "BeforeCenterName": "กลุ่ม 15/ร.ร.มัธยมยางสีสุราช",
+  "BeforeAffiliationName": "ร.ร.บ้านโนนรัง"
+ },
+ {
+  "citizenId": 1449900578796,
+  "name": "นางสาวขวัญจิรา  หันทยุง",
+  "district": "นาดูน",
+  "pollingPlace": "ร.ร.นาดูนประชาสรรพ์",
+  "centerNo": 1,
+  "centerName": "กลุ่ม 13/กลุ่ม ร.ร.มัธยม/กลุ่ม ร.ร.เทศบาล",
+  "affiliationNo": 19,
+  "affiliationName": "ร.ร.กู่สันตรัตน์ (รายชื่อเพิ่มเติม)",
+  "listNo": 2,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.ยางสีสุราช",
+  "BeforeCenterNo": 1,
+  "BeforeCenterName": "กลุ่ม 15/ร.ร.มัธยมยางสีสุราช",
+  "BeforeAffiliationName": "ร.ร.บ้านสว่าง  "
+ },
+ {
+  "citizenId": 1440900048144,
+  "name": "นายพิทักษ์ชัย  มาดาโต",
+  "district": "วาปีปทุม",
+  "pollingPlace": "ร.ร.เมืองวาปีปทุม",
+  "centerNo": 1,
+  "centerName": "กลุ่ม 1",
+  "affiliationNo": 20,
+  "affiliationName": "ร.ร.ราชประชานุเคราะห์ 17 (รายชื่อเพิ่มเติม)",
+  "listNo": 3,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.ยางสีสุราช",
+  "BeforeCenterNo": 2,
+  "BeforeCenterName": "กลุ่ม 16/ร.ร.นาภูพิทยาคม",
+  "BeforeAffiliationName": "ร.ร.บ้านแวงดงหนองยาง"
+ },
+ {
+  "citizenId": 3440900772086,
+  "name": "นางสาวมธุรส  เรืองสมบัติ",
+  "district": "วาปีปทุม",
+  "pollingPlace": "ร.ร.วาปีปทุม",
+  "centerNo": 6,
+  "centerName": "กลุ่มมัธยมศึกษา",
+  "affiliationNo": 4,
+  "affiliationName": "ร.ร.วาปีปทุม (รายชื่อเพิ่มเติม)",
+  "listNo": 3,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.ยางสีสุราช",
+  "BeforeCenterNo": 2,
+  "BeforeCenterName": "กลุ่ม 16/ร.ร.นาภูพิทยาคม",
+  "BeforeAffiliationName": "ร.ร.นาภูพิทยาคม"
+ },
+ {
+  "citizenId": 1440800234027,
+  "name": "นางสาวเบญจมาศ  ประทุมทอง",
+  "district": "พยัคฆภูมิพิสัย",
+  "pollingPlace": "ร.ร.บ้านสระแคน",
+  "centerNo": 2,
+  "centerName": "กลุ่ม 7",
+  "affiliationNo": 17,
+  "affiliationName": "ร.ร.โนนจานวิทยา (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.วาปีปทุม",
+  "BeforeCenterNo": 1,
+  "BeforeCenterName": "กลุ่ม 1",
+  "BeforeAffiliationName": "ร.ร.ราชประชานุเคราะห์ 17"
+ },
+ {
+  "citizenId": 3440900557223,
+  "name": "นายอำนาจ  ขอเหล็กกลาง",
+  "district": "วาปีปทุม",
+  "pollingPlace": "ร.ร.เมืองวาปีปทุม",
+  "centerNo": 1,
+  "centerName": "กลุ่ม 1",
+  "affiliationNo": 20,
+  "affiliationName": "ร.ร.หนองตาไก้เผือกใต้วิทยา (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.วาปีปทุม",
+  "BeforeCenterNo": 2,
+  "BeforeCenterName": "กลุ่ม 2",
+  "BeforeAffiliationName": "ร.ร.บ้านดงใหญ่"
+ },
+ {
+  "citizenId": 3440900684691,
+  "name": "นายสมเกียรติ  ปะกิลาภัง",
+  "district": "วาปีปทุม",
+  "pollingPlace": "ร.ร.บ้านหนองหว้า",
+  "centerNo": 2,
+  "centerName": "กลุ่ม 2",
+  "affiliationNo": 16,
+  "affiliationName": "ร.ร.บ้านดงใหญ่ (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.วาปีปทุม",
+  "BeforeCenterNo": 3,
+  "BeforeCenterName": "กลุ่ม 3",
+  "BeforeAffiliationName": "ร.ร.บ้านโคกสูงหนองเสียวหนองขี"
+ },
+ {
+  "citizenId": 3449900044950,
+  "name": "นายอนุพล  อุปนันท์",
+  "district": "วาปีปทุม",
+  "pollingPlace": "ร.ร.เมืองวาปีปทุม",
+  "centerNo": 1,
+  "centerName": "กลุ่ม 1",
+  "affiliationNo": 20,
+  "affiliationName": "ร.ร.อนุบาลวาปีปทุม (รายชื่อเพิ่มเติม)",
+  "listNo": 2,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.วาปีปทุม",
+  "BeforeCenterNo": 4,
+  "BeforeCenterName": "กลุ่ม 4",
+  "BeforeAffiliationName": "ร.ร.บ้านโนน"
+ },
+ {
+  "citizenId": 1410500068377,
+  "name": "นางสุภัตรา  แฝงยงค์",
+  "district": "เมือง 2",
+  "pollingPlace": "ร.ร.ผดุงนารี",
+  "centerNo": 6,
+  "centerName": "ร.ร.ผดุงนารี",
+  "affiliationNo": 2,
+  "affiliationName": "ร.ร.ผดุงนารี (รายชื่อเพิ่มเติม)",
+  "listNo": 6,
+  "rights": "ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.วาปีปทุม",
+  "BeforeCenterNo": 4,
+  "BeforeCenterName": "กลุ่ม 4",
+  "BeforeAffiliationName": "ร.ร.บ้านหนองแสน"
+ },
+ {
+  "citizenId": 1409901237208,
+  "name": "นางสาวธันทิวา  คำศิริ",
+  "district": "เมือง 1",
+  "pollingPlace": "ร.ร.เทศบาลสามัคคีวิทยา",
+  "centerNo": 2,
+  "centerName": "บำนาญ อ.เมือง 1 หน่วยที่ 2",
+  "affiliationNo": 2,
+  "affiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 2 (รายชื่อเพิ่มเติม)",
+  "listNo": 15,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.วาปีปทุม",
+  "BeforeCenterNo": 6,
+  "BeforeCenterName": "กลุ่มมัธยมศึกษา",
+  "BeforeAffiliationName": "ร.ร.วาปีปทุม"
+ },
+ {
+  "citizenId": 3440100037128,
+  "name": "นายเสถียร  คำมี",
+  "district": "เมือง 2",
+  "pollingPlace": "ร.ร.สารคามพิทยาคม",
+  "centerNo": 5,
+  "centerName": "ร.ร.สารคามพิทยาคม",
+  "affiliationNo": 2,
+  "affiliationName": "ร.ร.สารคามพิทยาคม (รายชื่อเพิ่มเติม)",
+  "listNo": 3,
+  "rights": "ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.วาปีปทุม",
+  "BeforeCenterNo": 6,
+  "BeforeCenterName": "กลุ่มมัธยมศึกษา",
+  "BeforeAffiliationName": "ร.ร.วาปีปทุม"
+ },
+ {
+  "citizenId": 1679800102003,
+  "name": "นางสาวสุรียาวรรณ  จันสด",
+  "district": "บรบือ",
+  "pollingPlace": "ร.ร.บรบือวิทยาคาร",
+  "centerNo": 1,
+  "centerName": "ร.ร.บรบือวิทยาคาร/ร.ร.บรบือ/ร.ร.โนนราษีวิทยา/ร.ร.เทศบาลตําบลบรบือ",
+  "affiliationNo": 5,
+  "affiliationName": "ร.ร.บรบือ (รายชื่อเพิ่มเติม)",
+  "listNo": 2,
+  "rights": "ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.วาปีปทุม",
+  "BeforeCenterNo": 6,
+  "BeforeCenterName": "กลุ่มมัธยมศึกษา",
+  "BeforeAffiliationName": "ร.ร.วาปีปทุม"
+ },
+ {
+  "citizenId": 1460600086148,
+  "name": "นางสาวรัตน์ชนัญญา  เกตุมาลา",
+  "district": "บรบือ",
+  "pollingPlace": "ร.ร.บรบือวิทยาคาร",
+  "centerNo": 1,
+  "centerName": "ร.ร.บรบือวิทยาคาร/ร.ร.บรบือ/ร.ร.โนนราษีวิทยา/ร.ร.เทศบาลตําบลบรบือ",
+  "affiliationNo": 5,
+  "affiliationName": "ร.ร.บรบือ (รายชื่อเพิ่มเติม)",
+  "listNo": 4,
+  "rights": "ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.วาปีปทุม",
+  "BeforeCenterNo": 6,
+  "BeforeCenterName": "กลุ่มมัธยมศึกษา",
+  "BeforeAffiliationName": "ร.ร.ประชาพัฒนา"
+ },
+ {
+  "citizenId": 5450590033651,
+  "name": "นางสาวนิดา  พันธไชย",
+  "district": "วาปีปทุม",
+  "pollingPlace": "ร.ร.อนุบาลวาปีปทุม",
+  "centerNo": 12,
+  "centerName": "บำนาญ อ.วาปีปทุม หน่วยที่ 4",
+  "affiliationNo": 2,
+  "affiliationName": "บำนาญ อ.วาปีปทุม หน่วยที่ 4 (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.วาปีปทุม",
+  "BeforeCenterNo": 8,
+  "BeforeCenterName": "สพป.มค.2",
+  "BeforeAffiliationName": "สพป.มค.2"
+ },
+ {
+  "citizenId": 3319900024399,
+  "name": "นายพชรวรรธน์  พรหมจันทร์",
+  "district": "วาปีปทุม",
+  "pollingPlace": "ร.ร.อนุบาลวาปีปทุม",
+  "centerNo": 12,
+  "centerName": "บำนาญ อ.วาปีปทุม หน่วยที่ 4",
+  "affiliationNo": 2,
+  "affiliationName": "บำนาญ อ.วาปีปทุม หน่วยที่ 4 (รายชื่อเพิ่มเติม)",
+  "listNo": 2,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.วาปีปทุม",
+  "BeforeCenterNo": 8,
+  "BeforeCenterName": "สพป.มค.2",
+  "BeforeAffiliationName": "สพป.มค.2"
+ },
+ {
+  "citizenId": 3440700459465,
+  "name": "นายสมร  จันทเขต",
+  "district": "นาเชือก",
+  "pollingPlace": "ร.ร.เทศบาลนาเชือก",
+  "centerNo": 6,
+  "centerName": "บำนาญ อ.นาเชือก หน่วยที่ 2/บำนาญ ร.ร.เทศบาลนาเชือก",
+  "affiliationNo": 3,
+  "affiliationName": "บำนาญ อ.นาเชือก หน่วยที่ 2 (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก",
+  "BeforeDistrict": "อ.วาปีปทุม",
+  "BeforeCenterNo": 10,
+  "BeforeCenterName": "บำนาญ อ.วาปีปทุม หน่วยที่ 2",
+  "BeforeAffiliationName": "บำนาญ อ.วาปีปทุม หน่วยที่ 2"
+ },
+ {
+  "citizenId": 3440300518944,
+  "name": "นางสาววิราวัลย์  สารเหล่าโพธิ์",
+  "district": "โกสุมพิสัย",
+  "pollingPlace": "ร.ร.บ้านแพงหนองเหนือ",
+  "centerNo": 3,
+  "centerName": "ศูนย์แพงงามบอนสวรรค์/ร.ร.โพนงามพิทยานุกูล",
+  "affiliationNo": 3,
+  "affiliationName": "ร.ร.บ้านดอนจำปาดอนสวรรค์",
+  "listNo": 5,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก"
+ },
+ {
+  "citizenId": 3440300061081,
+  "name": "นางจิรภัทร  สีแก้วสิ่ว",
+  "district": "โกสุมพิสัย",
+  "pollingPlace": "ร.ร.บ้านวังยาววิทยายน",
+  "centerNo": 4,
+  "centerName": "ศูนย์วังยาวเขวาไร่ดอนกลาง/ร.ร.วังยาวศึกษาวิทย์/ร.ร.เขวาไร่ศึกษา",
+  "affiliationNo": 4,
+  "affiliationName": "ร.ร.ดอนกลางนุกูลวิทย์",
+  "listNo": 1,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก"
+ },
+ {
+  "citizenId": 3450400591261,
+  "name": "นางสาวอาภรณ์  พลอ่อนสา",
+  "district": "วาปีปทุม",
+  "pollingPlace": "ร.ร.บ้านหนองกุง",
+  "centerNo": 4,
+  "centerName": "กลุ่ม 4",
+  "affiliationNo": 8,
+  "affiliationName": "ร.ร.บ้านดงน้อย",
+  "listNo": 1,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก"
+ },
+ {
+  "citizenId": 3440400522625,
+  "name": "นางผกากร  เชื้อแขก",
+  "district": "กันทรวิชัย",
+  "pollingPlace": "ร.ร.บ้านท่าขอนยาง",
+  "centerNo": 1,
+  "centerName": "ศูนย์ 7 เมืองท่ามะค่าไส้จ่อ",
+  "affiliationNo": 13,
+  "affiliationName": "ร.ร.บ้านไผ่น้ำเที่ยง",
+  "listNo": 1,
+  "rights": "ผู้แทนสมาชิก"
+ },
+ {
+  "citizenId": 3440700063065,
+  "name": "นางกาญจนรัตน์  ศรีสร้อย",
+  "district": "นาเชือก",
+  "pollingPlace": "ร.ร.บ้านปอพาน",
+  "centerNo": 1,
+  "centerName": "กลุ่ม 10",
+  "affiliationNo": 1,
+  "affiliationName": "ร.ร.บ้านปอพานหนองโน",
+  "listNo": 4,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก"
+ },
+ {
+  "citizenId": 1440700080052,
+  "name": "นางสาววิสุดา  สีคาม",
+  "district": "นาเชือก",
+  "pollingPlace": "ร.ร.บ้านหนองโพธิ์",
+  "centerNo": 3,
+  "centerName": "กลุ่ม 12",
+  "affiliationNo": 11,
+  "affiliationName": "ร.ร.บ้านหัวสระ",
+  "listNo": 2,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก"
+ },
+ {
+  "citizenId": 3440200012631,
+  "name": "นางสาววิลาวัล  แสนชนะ",
+  "district": "แกดำ",
+  "pollingPlace": "ร.ร.มิตรภาพ",
+  "centerNo": 2,
+  "centerName": "ศูนย์ 12 มิตรภาพ/ร.ร.มิตรภาพ",
+  "affiliationNo": 7,
+  "affiliationName": "ร.ร.บ้านโสกแดง",
+  "listNo": 1,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก"
+ },
+ {
+  "citizenId": 1409901042288,
+  "name": "นางสาวนุจรินทร์  นนทะบูรณ์",
+  "district": "ชื่นชม",
+  "pollingPlace": "ร.ร.ชื่นชมพิทยาคาร",
+  "centerNo": 1,
+  "centerName": "ศูนย์ชื่นชม/ร.ร.ชื่นชมพิทยาคาร/ร.ร.เทศบาลตำบลหนองกุง",
+  "affiliationNo": 2,
+  "affiliationName": "ร.ร.ชุมชนบ้านกุดปลาดุก",
+  "listNo": 6,
+  "rights": "ผู้แทนสมาชิก"
  },
  {
   "citizenId": 3449900126506,
@@ -3455,18 +4676,6 @@
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 3449900277547,
-  "name": "นายทรงศักดิ์  ทุงจันทร์",
-  "district": "เมือง 1",
-  "pollingPlace": "ร.ร.เทศบาลสามัคคีวิทยา",
-  "centerNo": 1,
-  "centerName": "บำนาญ อ.เมือง 1 หน่วยที่ 1",
-  "affiliationNo": 1,
-  "affiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 1",
-  "listNo": 199,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
   "citizenId": 3440100352317,
   "name": "นายดวง  โนนคำเฮือง",
   "district": "เมือง 1",
@@ -5279,18 +6488,6 @@
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 1360700091055,
-  "name": "นางสาวพรสิริภัสร์  สิทธิพล",
-  "district": "เมือง 1",
-  "pollingPlace": "ร.ร.เทศบาลสามัคคีวิทยา",
-  "centerNo": 2,
-  "centerName": "บำนาญ อ.เมือง 1 หน่วยที่ 2",
-  "affiliationNo": 1,
-  "affiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 2",
-  "listNo": 111,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
   "citizenId": 1460600072341,
   "name": "นางสาวฐิติพร  บุญธรรม",
   "district": "เมือง 1",
@@ -5396,18 +6593,6 @@
   "affiliationNo": 1,
   "affiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 2",
   "listNo": 120,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 1509900372364,
-  "name": "นางดาราลักษณ์  เอกโชติ",
-  "district": "เมือง 1",
-  "pollingPlace": "ร.ร.เทศบาลสามัคคีวิทยา",
-  "centerNo": 2,
-  "centerName": "บำนาญ อ.เมือง 1 หน่วยที่ 2",
-  "affiliationNo": 1,
-  "affiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 2",
-  "listNo": 121,
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
@@ -6419,18 +7604,6 @@
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 3430500095834,
-  "name": "นายปิยะพงษ์  ศรีสุพรรณ",
-  "district": "เมือง 1",
-  "pollingPlace": "ร.ร.เทศบาลสามัคคีวิทยา",
-  "centerNo": 2,
-  "centerName": "บำนาญ อ.เมือง 1 หน่วยที่ 2",
-  "affiliationNo": 1,
-  "affiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 2",
-  "listNo": 206,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
   "citizenId": 1361200023973,
   "name": "นายวสันต์  วังคะฮาด",
   "district": "เมือง 1",
@@ -6692,18 +7865,6 @@
   "affiliationNo": 1,
   "affiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 2",
   "listNo": 228,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 1449900315914,
-  "name": "นายวิสุทธิ์  นามโท",
-  "district": "เมือง 1",
-  "pollingPlace": "ร.ร.เทศบาลสามัคคีวิทยา",
-  "centerNo": 2,
-  "centerName": "บำนาญ อ.เมือง 1 หน่วยที่ 2",
-  "affiliationNo": 1,
-  "affiliationName": "บำนาญ อ.เมือง 1 หน่วยที่ 2",
-  "listNo": 229,
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
@@ -9287,18 +10448,6 @@
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 3411200887311,
-  "name": "นางเกตุนภัส  อุดมชัย",
-  "district": "เมือง 1",
-  "pollingPlace": "ร.ร.เทศบาลบูรพาพิทยาคาร",
-  "centerNo": 6,
-  "centerName": "โรงเรียนในสังกัดเทศบาล",
-  "affiliationNo": 1,
-  "affiliationName": "ร.ร.เทศบาลบูรพาพิทยาคาร  ",
-  "listNo": 13,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
   "citizenId": 3449900273983,
   "name": "นางสาวทิวาวรรณ  อันแสน",
   "district": "เมือง 1",
@@ -9320,18 +10469,6 @@
   "affiliationNo": 1,
   "affiliationName": "ร.ร.เทศบาลบูรพาพิทยาคาร  ",
   "listNo": 15,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 3449900061447,
-  "name": "นายณัฐภูมิ  ศิริพล",
-  "district": "เมือง 1",
-  "pollingPlace": "ร.ร.เทศบาลบูรพาพิทยาคาร",
-  "centerNo": 6,
-  "centerName": "โรงเรียนในสังกัดเทศบาล",
-  "affiliationNo": 1,
-  "affiliationName": "ร.ร.เทศบาลบูรพาพิทยาคาร  ",
-  "listNo": 16,
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
@@ -10379,18 +11516,6 @@
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 3449900117400,
-  "name": "นายณัฐเมธินทร์  พุทธัสสะ",
-  "district": "เมือง 1",
-  "pollingPlace": "ร.ร.เทศบาลบูรพาพิทยาคาร",
-  "centerNo": 6,
-  "centerName": "โรงเรียนในสังกัดเทศบาล",
-  "affiliationNo": 4,
-  "affiliationName": "ร.ร.เทศบาลสามัคคีวิทยา  ",
-  "listNo": 2,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
   "citizenId": 3440400336252,
   "name": "นางสาวภิญญาพัชญ์  เนื่องไชยยศ",
   "district": "เมือง 1",
@@ -10691,18 +11816,6 @@
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 3440400106443,
-  "name": "นายวิทูลย์  คำภวา",
-  "district": "เมือง 1",
-  "pollingPlace": "ร.ร.เทศบาลบูรพาพิทยาคาร",
-  "centerNo": 6,
-  "centerName": "โรงเรียนในสังกัดเทศบาล",
-  "affiliationNo": 6,
-  "affiliationName": "ร.ร.เทศบาลบ้านค้อ  ",
-  "listNo": 2,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
   "citizenId": 3449900283997,
   "name": "นางจรัสศรี  ทองสุภา",
   "district": "เมือง 1",
@@ -10952,18 +12065,6 @@
   "affiliationNo": 7,
   "affiliationName": "ร.ร.เทศบาลบ้านแมด  ",
   "listNo": 4,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 1450100034335,
-  "name": "นางจิราภรณ์  หาญประชุม",
-  "district": "เมือง 1",
-  "pollingPlace": "ร.ร.เทศบาลบูรพาพิทยาคาร",
-  "centerNo": 6,
-  "centerName": "โรงเรียนในสังกัดเทศบาล",
-  "affiliationNo": 7,
-  "affiliationName": "ร.ร.เทศบาลบ้านแมด  ",
-  "listNo": 5,
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
@@ -16859,18 +17960,6 @@
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 1401700177936,
-  "name": "นายนภัทร  วัฒนาปัญญาสกุล",
-  "district": "เมือง 1",
-  "pollingPlace": "สนง.ส่งเสริมการเรียนรู้",
-  "centerNo": 11,
-  "centerName": "สนง.ส่งเสริมการเรียนรู้",
-  "affiliationNo": 1,
-  "affiliationName": "สนง.ส่งเสริมการเรียนรู้",
-  "listNo": 23,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
   "citizenId": 1460700221276,
   "name": "นางสาวจริยา  พันกินรี",
   "district": "เมือง 1",
@@ -18476,18 +19565,6 @@
   "affiliationNo": 2,
   "affiliationName": "บำนาญวิทยาลัยเทคนิค",
   "listNo": 1,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 3449900201575,
-  "name": "นายปราณีต  เลิศสกุณี",
-  "district": "เมือง 1",
-  "pollingPlace": "ว.เทคนิคมหาสารคาม",
-  "centerNo": 12,
-  "centerName": "ว.เทคนิคมหาสารคาม",
-  "affiliationNo": 2,
-  "affiliationName": "บำนาญวิทยาลัยเทคนิค",
-  "listNo": 2,
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
@@ -22811,18 +23888,6 @@
   "rights": "ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 3440100108998,
-  "name": "นางสาวสุภาวดี  ชุมแสง",
-  "district": "เมือง 2",
-  "pollingPlace": "ร.ร.บ้านเขวา(รัฐประชาวิทยากร)",
-  "centerNo": 3,
-  "centerName": "ศูนย์ 3 เขวา ท่าตูม ห้วยแอ่ง",
-  "affiliationNo": 8,
-  "affiliationName": "ร.ร.บ้านท่าตูมดอนเรือ",
-  "listNo": 4,
-  "rights": "ผู้แทนสมาชิก"
- },
- {
   "citizenId": 1449900325413,
   "name": "นายวัชระ  ลามัชฉิมา",
   "district": "เมือง 2",
@@ -24260,18 +25325,6 @@
   "affiliationNo": 1,
   "affiliationName": "ร.ร.สารคามพิทยาคม",
   "listNo": 29,
-  "rights": "ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 5440600059879,
-  "name": "นางสุพิศ  รินทะชัย",
-  "district": "เมือง 2",
-  "pollingPlace": "ร.ร.สารคามพิทยาคม",
-  "centerNo": 5,
-  "centerName": "ร.ร.สารคามพิทยาคม",
-  "affiliationNo": 1,
-  "affiliationName": "ร.ร.สารคามพิทยาคม",
-  "listNo": 30,
   "rights": "ผู้แทนสมาชิก"
  },
  {
@@ -30299,18 +31352,6 @@
   "rights": "ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 3102400315802,
-  "name": "นางแววดาว  ทดคุย",
-  "district": "เมือง 2",
-  "pollingPlace": "กองการศึกษา อบจ.",
-  "centerNo": 10,
-  "centerName": "กองการศึกษา อบจ./ร.ร.โคกก่อพิทยาคม/ร.ร.เกิ้งวิทยานุกูล",
-  "affiliationNo": 1,
-  "affiliationName": "กองการศึกษา อบจ.",
-  "listNo": 4,
-  "rights": "ผู้แทนสมาชิก"
- },
- {
   "citizenId": 3440900582163,
   "name": "นางสาวสุดาวัลย์  จันทะกล",
   "district": "เมือง 2",
@@ -32924,18 +33965,6 @@
   "affiliationNo": 1,
   "affiliationName": "บำนาญ อ.เมือง 2 หน่วยที่ 1",
   "listNo": 166,
-  "rights": "ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 3440100467564,
-  "name": "นายวิวัฒน์  อุทัยดา",
-  "district": "เมือง 2",
-  "pollingPlace": "ร.ร.หลักเมือง",
-  "centerNo": 11,
-  "centerName": "บำนาญ อ.เมือง 2 หน่วยที่ 1",
-  "affiliationNo": 1,
-  "affiliationName": "บำนาญ อ.เมือง 2 หน่วยที่ 1",
-  "listNo": 167,
   "rights": "ผู้แทนสมาชิก"
  },
  {
@@ -36104,18 +37133,6 @@
   "affiliationNo": 1,
   "affiliationName": "บำนาญ อ.เมือง 2 หน่วยที่ 2",
   "listNo": 192,
-  "rights": "ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 3440100105212,
-  "name": "นายพิรุฬห์  จันทนมัฏฐะ",
-  "district": "เมือง 2",
-  "pollingPlace": "ร.ร.หลักเมือง",
-  "centerNo": 12,
-  "centerName": "บำนาญ อ.เมือง 2 หน่วยที่ 2",
-  "affiliationNo": 1,
-  "affiliationName": "บำนาญ อ.เมือง 2 หน่วยที่ 2",
-  "listNo": 193,
   "rights": "ผู้แทนสมาชิก"
  },
  {
@@ -47364,7 +48381,7 @@
  },
  {
   "citizenId": 3440100417303,
-  "name": "นางสุธิดา  ศุภเสถียร",
+  "name": "นางสุธิดา  พลเสนา",
   "district": "เมือง 2",
   "pollingPlace": "ร.ร.หลักเมือง",
   "centerNo": 16,
@@ -49368,7 +50385,7 @@
  },
  {
   "citizenId": 3449900169281,
-  "name": "นางมณี  ซึมกระโทก",
+  "name": "นางมณี  พงศ์ภูชิตกุล",
   "district": "เมือง 2",
   "pollingPlace": "ร.ร.หลักเมือง",
   "centerNo": 17,
@@ -52235,18 +53252,6 @@
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 1449900405654,
-  "name": "นายธนาวัฒน์  ชนะมาร",
-  "district": "โกสุมพิสัย",
-  "pollingPlace": "ร.ร.ศรีโกสุมวิทยาฯ",
-  "centerNo": 1,
-  "centerName": "ศูนย์โกสัมพี/ร.ร.โกสุมวิทยาสรรค์",
-  "affiliationNo": 12,
-  "affiliationName": "ร.ร.โกสุมวิทยาสรรค์",
-  "listNo": 63,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
   "citizenId": 1409901453059,
   "name": "นางสาวสุวรรณี  อุ้ย",
   "district": "โกสุมพิสัย",
@@ -53699,18 +54704,6 @@
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 3440300518944,
-  "name": "นางสาววิราวัลย์  สารเหล่าโพธิ์",
-  "district": "โกสุมพิสัย",
-  "pollingPlace": "ร.ร.บ้านแพงหนองเหนือ",
-  "centerNo": 3,
-  "centerName": "ศูนย์แพงงามบอนสวรรค์/ร.ร.โพนงามพิทยานุกูล",
-  "affiliationNo": 3,
-  "affiliationName": "ร.ร.บ้านดอนจำปาดอนสวรรค์",
-  "listNo": 5,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
   "citizenId": 1440600100361,
   "name": "นางชญาดา  เลิศล้ำ",
   "district": "โกสุมพิสัย",
@@ -54635,18 +55628,6 @@
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 3440500320765,
-  "name": "นางสาวสุดารัตน์  กองเพชร",
-  "district": "โกสุมพิสัย",
-  "pollingPlace": "ร.ร.บ้านแพงหนองเหนือ",
-  "centerNo": 3,
-  "centerName": "ศูนย์แพงงามบอนสวรรค์/ร.ร.โพนงามพิทยานุกูล",
-  "affiliationNo": 15,
-  "affiliationName": "ร.ร.โพนงามพิทยานุกูล",
-  "listNo": 1,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
   "citizenId": 1450400116957,
   "name": "นายโยธิน  อสุริยิน",
   "district": "โกสุมพิสัย",
@@ -54656,18 +55637,6 @@
   "affiliationNo": 15,
   "affiliationName": "ร.ร.โพนงามพิทยานุกูล",
   "listNo": 2,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 1440100118709,
-  "name": "นางสาวพัชรินทร์  โมหา",
-  "district": "โกสุมพิสัย",
-  "pollingPlace": "ร.ร.บ้านแพงหนองเหนือ",
-  "centerNo": 3,
-  "centerName": "ศูนย์แพงงามบอนสวรรค์/ร.ร.โพนงามพิทยานุกูล",
-  "affiliationNo": 15,
-  "affiliationName": "ร.ร.โพนงามพิทยานุกูล",
-  "listNo": 3,
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
@@ -54992,18 +55961,6 @@
   "affiliationNo": 3,
   "affiliationName": "ร.ร.หินแห่เสริมศิลป์",
   "listNo": 9,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 3440300061081,
-  "name": "นางจิรภัทร  สีแก้วสิ่ว",
-  "district": "โกสุมพิสัย",
-  "pollingPlace": "ร.ร.บ้านวังยาววิทยายน",
-  "centerNo": 4,
-  "centerName": "ศูนย์วังยาวเขวาไร่ดอนกลาง/ร.ร.วังยาวศึกษาวิทย์/ร.ร.เขวาไร่ศึกษา",
-  "affiliationNo": 4,
-  "affiliationName": "ร.ร.ดอนกลางนุกูลวิทย์",
-  "listNo": 1,
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
@@ -55379,18 +56336,6 @@
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 1449900295719,
-  "name": "นางสาวจินตนา  ดวงศรี",
-  "district": "โกสุมพิสัย",
-  "pollingPlace": "ร.ร.บ้านวังยาววิทยายน",
-  "centerNo": 4,
-  "centerName": "ศูนย์วังยาวเขวาไร่ดอนกลาง/ร.ร.วังยาวศึกษาวิทย์/ร.ร.เขวาไร่ศึกษา",
-  "affiliationNo": 10,
-  "affiliationName": "ร.ร.บ้านวังโพน",
-  "listNo": 8,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
   "citizenId": 1440300155187,
   "name": "นางมณีรัตร์  บุบผาแสง",
   "district": "โกสุมพิสัย",
@@ -55556,18 +56501,6 @@
   "affiliationNo": 13,
   "affiliationName": "ร.ร.วังยาวศึกษาวิทย์",
   "listNo": 5,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 1440600044429,
-  "name": "นางสาวรัฎชญา  แก้วสุวรรณ",
-  "district": "โกสุมพิสัย",
-  "pollingPlace": "ร.ร.บ้านวังยาววิทยายน",
-  "centerNo": 4,
-  "centerName": "ศูนย์วังยาวเขวาไร่ดอนกลาง/ร.ร.วังยาวศึกษาวิทย์/ร.ร.เขวาไร่ศึกษา",
-  "affiliationNo": 13,
-  "affiliationName": "ร.ร.วังยาวศึกษาวิทย์",
-  "listNo": 6,
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
@@ -55787,18 +56720,6 @@
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 1409900170177,
-  "name": "นางสาวพลอยไพลิน  ใหม่คามิ",
-  "district": "โกสุมพิสัย",
-  "pollingPlace": "ร.ร.บ้านวังยาววิทยายน",
-  "centerNo": 4,
-  "centerName": "ศูนย์วังยาวเขวาไร่ดอนกลาง/ร.ร.วังยาวศึกษาวิทย์/ร.ร.เขวาไร่ศึกษา",
-  "affiliationNo": 14,
-  "affiliationName": "ร.ร.เขวาไร่ศึกษา",
-  "listNo": 17,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
   "citizenId": 3770200218261,
   "name": "นางอาพร  อุดมชัย",
   "district": "โกสุมพิสัย",
@@ -55955,18 +56876,6 @@
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 1400900222951,
-  "name": "นางสาวนงนุช  วิชาผา",
-  "district": "โกสุมพิสัย",
-  "pollingPlace": "ร.ร.บ้านวังยาววิทยายน",
-  "centerNo": 4,
-  "centerName": "ศูนย์วังยาวเขวาไร่ดอนกลาง/ร.ร.วังยาวศึกษาวิทย์/ร.ร.เขวาไร่ศึกษา",
-  "affiliationNo": 14,
-  "affiliationName": "ร.ร.เขวาไร่ศึกษา",
-  "listNo": 31,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
   "citizenId": 1450500094777,
   "name": "นางสาวเบญจมาศ  ศรีอุดร",
   "district": "โกสุมพิสัย",
@@ -55976,18 +56885,6 @@
   "affiliationNo": 14,
   "affiliationName": "ร.ร.เขวาไร่ศึกษา",
   "listNo": 32,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 2449900022869,
-  "name": "นางสาวเสาวลักษณ์  อุประ",
-  "district": "โกสุมพิสัย",
-  "pollingPlace": "ร.ร.บ้านวังยาววิทยายน",
-  "centerNo": 4,
-  "centerName": "ศูนย์วังยาวเขวาไร่ดอนกลาง/ร.ร.วังยาวศึกษาวิทย์/ร.ร.เขวาไร่ศึกษา",
-  "affiliationNo": 14,
-  "affiliationName": "ร.ร.เขวาไร่ศึกษา",
-  "listNo": 33,
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
@@ -57080,18 +57977,6 @@
   "affiliationNo": 1,
   "affiliationName": "ร.ร.บ้านแห่บริหารวิทย์",
   "listNo": 3,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 1440300002607,
-  "name": "นางสาวศิริญญา  สุโพธิ์คำ",
-  "district": "โกสุมพิสัย",
-  "pollingPlace": "ร.ร.บ้านแห่บริหารวิทย์",
-  "centerNo": 6,
-  "centerName": "ศูนย์วังมัจฉา",
-  "affiliationNo": 1,
-  "affiliationName": "ร.ร.บ้านแห่บริหารวิทย์",
-  "listNo": 4,
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
@@ -60512,18 +61397,6 @@
   "affiliationNo": 1,
   "affiliationName": "บำนาญ อ.โกสุม หน่วยที่ 1",
   "listNo": 216,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 3440300817330,
-  "name": "นายทวีศักดิ์  สุวะเลิศ",
-  "district": "โกสุมพิสัย",
-  "pollingPlace": "ร.ร.ศรีโกสุมวิทยาฯ",
-  "centerNo": 8,
-  "centerName": "บำนาญ อ.โกสุม หน่วยที่ 1",
-  "affiliationNo": 1,
-  "affiliationName": "บำนาญ อ.โกสุม หน่วยที่ 1",
-  "listNo": 217,
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
@@ -70427,18 +71300,6 @@
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 1440800234027,
-  "name": "นางสาวเบญจมาศ  ประทุมทอง",
-  "district": "วาปีปทุม",
-  "pollingPlace": "ร.ร.เมืองวาปีปทุม",
-  "centerNo": 1,
-  "centerName": "กลุ่ม 1",
-  "affiliationNo": 11,
-  "affiliationName": "ร.ร.ราชประชานุเคราะห์ 17",
-  "listNo": 5,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
   "citizenId": 3440900335212,
   "name": "นางศิรินันท์  ปัดถานัง",
   "district": "วาปีปทุม",
@@ -71687,18 +72548,6 @@
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 3440900557223,
-  "name": "นายอำนาจ  ขอเหล็กกลาง",
-  "district": "วาปีปทุม",
-  "pollingPlace": "ร.ร.บ้านหนองหว้า",
-  "centerNo": 2,
-  "centerName": "กลุ่ม 2",
-  "affiliationNo": 14,
-  "affiliationName": "ร.ร.บ้านดงใหญ่",
-  "listNo": 2,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
   "citizenId": 3440900616823,
   "name": "นางวัลย์นภัสร์  ชาวพงษ์",
   "district": "วาปีปทุม",
@@ -71972,18 +72821,6 @@
   "affiliationNo": 3,
   "affiliationName": "ร.ร.บ้านโคกสูงหนองเสียวหนองขี",
   "listNo": 7,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 3440900684691,
-  "name": "นายสมเกียรติ  ปะกิลาภัง",
-  "district": "วาปีปทุม",
-  "pollingPlace": "ร.ร.บ้านนาข่า",
-  "centerNo": 3,
-  "centerName": "กลุ่ม 3",
-  "affiliationNo": 3,
-  "affiliationName": "ร.ร.บ้านโคกสูงหนองเสียวหนองขี",
-  "listNo": 8,
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
@@ -72479,18 +73316,6 @@
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 3449900044950,
-  "name": "นายอนุพล  อุปนันท์",
-  "district": "วาปีปทุม",
-  "pollingPlace": "ร.ร.บ้านหนองกุง",
-  "centerNo": 4,
-  "centerName": "กลุ่ม 4",
-  "affiliationNo": 2,
-  "affiliationName": "ร.ร.บ้านโนน",
-  "listNo": 3,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
   "citizenId": 3440900367793,
   "name": "นางพรทิพย์  ปะวาระณะ",
   "district": "วาปีปทุม",
@@ -72896,18 +73721,6 @@
   "affiliationNo": 7,
   "affiliationName": "ร.ร.บ้านดู่หนองโกโนนสมบูรณ์",
   "listNo": 4,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 3450400591261,
-  "name": "นางสาวอาภรณ์  พลอ่อนสา",
-  "district": "วาปีปทุม",
-  "pollingPlace": "ร.ร.บ้านหนองกุง",
-  "centerNo": 4,
-  "centerName": "กลุ่ม 4",
-  "affiliationNo": 8,
-  "affiliationName": "ร.ร.บ้านดงน้อย",
-  "listNo": 1,
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
@@ -73388,18 +74201,6 @@
   "affiliationNo": 13,
   "affiliationName": "ร.ร.บ้านหนองแสน",
   "listNo": 12,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 1410500068377,
-  "name": "นางสุภัตรา  แฝงยงค์",
-  "district": "วาปีปทุม",
-  "pollingPlace": "ร.ร.บ้านหนองกุง",
-  "centerNo": 4,
-  "centerName": "กลุ่ม 4",
-  "affiliationNo": 13,
-  "affiliationName": "ร.ร.บ้านหนองแสน",
-  "listNo": 13,
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
@@ -74843,18 +75644,6 @@
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 1679800102003,
-  "name": "นางสาวสุรียาวรรณ  จันสด",
-  "district": "วาปีปทุม",
-  "pollingPlace": "ร.ร.วาปีปทุม",
-  "centerNo": 6,
-  "centerName": "กลุ่มมัธยมศึกษา",
-  "affiliationNo": 1,
-  "affiliationName": "ร.ร.วาปีปทุม",
-  "listNo": 47,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
   "citizenId": 3449900042566,
   "name": "นางเบญญาภา  ไชยเกตุ",
   "district": "วาปีปทุม",
@@ -75023,18 +75812,6 @@
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 3440100037128,
-  "name": "นายเสถียร  คำมี",
-  "district": "วาปีปทุม",
-  "pollingPlace": "ร.ร.วาปีปทุม",
-  "centerNo": 6,
-  "centerName": "กลุ่มมัธยมศึกษา",
-  "affiliationNo": 1,
-  "affiliationName": "ร.ร.วาปีปทุม",
-  "listNo": 62,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
   "citizenId": 1449900242909,
   "name": "นางสาวสุพัตรา  จันสีน้อย",
   "district": "วาปีปทุม",
@@ -75068,18 +75845,6 @@
   "affiliationNo": 1,
   "affiliationName": "ร.ร.วาปีปทุม",
   "listNo": 65,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 1409901237208,
-  "name": "นางสาวธันทิวา  คำศิริ",
-  "district": "วาปีปทุม",
-  "pollingPlace": "ร.ร.วาปีปทุม",
-  "centerNo": 6,
-  "centerName": "กลุ่มมัธยมศึกษา",
-  "affiliationNo": 1,
-  "affiliationName": "ร.ร.วาปีปทุม",
-  "listNo": 66,
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
@@ -75956,18 +76721,6 @@
   "affiliationNo": 3,
   "affiliationName": "ร.ร.ประชาพัฒนา",
   "listNo": 10,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 1460600086148,
-  "name": "นางสาวรัตน์ชนัญญา  เกตุมาลา",
-  "district": "วาปีปทุม",
-  "pollingPlace": "ร.ร.วาปีปทุม",
-  "centerNo": 6,
-  "centerName": "กลุ่มมัธยมศึกษา",
-  "affiliationNo": 3,
-  "affiliationName": "ร.ร.ประชาพัฒนา",
-  "listNo": 11,
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
@@ -77171,18 +77924,6 @@
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 5450590033651,
-  "name": "นางสาวนิดา  พันธไชย",
-  "district": "วาปีปทุม",
-  "pollingPlace": "สพป.มค.2",
-  "centerNo": 8,
-  "centerName": "สพป.มค.2",
-  "affiliationNo": 1,
-  "affiliationName": "สพป.มค.2",
-  "listNo": 5,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
   "citizenId": 3440900782561,
   "name": "นายสมบัติ  คุณแก้ว",
   "district": "วาปีปทุม",
@@ -77468,18 +78209,6 @@
   "affiliationNo": 1,
   "affiliationName": "สพป.มค.2",
   "listNo": 29,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 3319900024399,
-  "name": "นายพชรวรรธน์  พรหมจันทร์",
-  "district": "วาปีปทุม",
-  "pollingPlace": "สพป.มค.2",
-  "centerNo": 8,
-  "centerName": "สพป.มค.2",
-  "affiliationNo": 1,
-  "affiliationName": "สพป.มค.2",
-  "listNo": 30,
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
@@ -79976,18 +80705,6 @@
   "affiliationNo": 1,
   "affiliationName": "บำนาญ อ.วาปีปทุม หน่วยที่ 1",
   "listNo": 186,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 3440900975211,
-  "name": "นางลำปาง  บาริศรี",
-  "district": "วาปีปทุม",
-  "pollingPlace": "ร.ร.อนุบาลวาปีปทุม",
-  "centerNo": 9,
-  "centerName": "บำนาญ อ.วาปีปทุม หน่วยที่ 1",
-  "affiliationNo": 1,
-  "affiliationName": "บำนาญ อ.วาปีปทุม หน่วยที่ 1",
-  "listNo": 187,
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
@@ -89255,30 +89972,6 @@
   "rights": "ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 3440400522625,
-  "name": "นางผกากร  เชื้อแขก",
-  "district": "กันทรวิชัย",
-  "pollingPlace": "ร.ร.บ้านท่าขอนยาง",
-  "centerNo": 1,
-  "centerName": "ศูนย์ 7 เมืองท่ามะค่าไส้จ่อ",
-  "affiliationNo": 13,
-  "affiliationName": "ร.ร.บ้านไผ่น้ำเที่ยง",
-  "listNo": 1,
-  "rights": "ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 3440400528739,
-  "name": "นางสุรางค์รัตน์  ยมศรีเคน",
-  "district": "กันทรวิชัย",
-  "pollingPlace": "ร.ร.บ้านท่าขอนยาง",
-  "centerNo": 1,
-  "centerName": "ศูนย์ 7 เมืองท่ามะค่าไส้จ่อ",
-  "affiliationNo": 14,
-  "affiliationName": "ร.ร.บ้านโนนตาลกุดเวียนหนองหญ้าม้า",
-  "listNo": 1,
-  "rights": "ผู้แทนสมาชิก"
- },
- {
   "citizenId": 1449900373230,
   "name": "นางสาวกุลสตรี  แก้วเกต",
   "district": "กันทรวิชัย",
@@ -90176,18 +90869,6 @@
   "affiliationNo": 1,
   "affiliationName": "ร.ร.อนุบาลกันทรวิชัย  ",
   "listNo": 24,
-  "rights": "ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 1440200005329,
-  "name": "นายนิรันดร์  พันโภคา",
-  "district": "กันทรวิชัย",
-  "pollingPlace": "ร.ร.อนุบาลกันทรวิชัย",
-  "centerNo": 3,
-  "centerName": "ศูนย์ 9 มิ่งเมือง",
-  "affiliationNo": 1,
-  "affiliationName": "ร.ร.อนุบาลกันทรวิชัย  ",
-  "listNo": 25,
   "rights": "ผู้แทนสมาชิก"
  },
  {
@@ -98819,18 +99500,6 @@
   "rights": "ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 3440500425222,
-  "name": "นางพรรณี  เพชรน้อย",
-  "district": "เชียงยืน",
-  "pollingPlace": "ร.ร.บ้านเชียงยืน",
-  "centerNo": 1,
-  "centerName": "ศูนย์เชียงยืนเสือเฒ่า",
-  "affiliationNo": 1,
-  "affiliationName": "ร.ร.บ้านเชียงยืน",
-  "listNo": 4,
-  "rights": "ผู้แทนสมาชิก"
- },
- {
   "citizenId": 3440400664381,
   "name": "นายอนุชา  ทะราศรี",
   "district": "เชียงยืน",
@@ -104399,18 +105068,6 @@
   "rights": "ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 3469900181451,
-  "name": "นายศักดิ์ธีระ  ถนัดค้า",
-  "district": "เชียงยืน",
-  "pollingPlace": "ร.ร.บ้านเชียงยืน",
-  "centerNo": 6,
-  "centerName": "บำนาญ อ.เชียงยืน หน่วยที่ 2",
-  "affiliationNo": 1,
-  "affiliationName": "บำนาญ อ.เชียงยืน หน่วยที่ 2",
-  "listNo": 26,
-  "rights": "ผู้แทนสมาชิก"
- },
- {
   "citizenId": 3440500556980,
   "name": "นางมะลิซ้อน  กันพิพิธ",
   "district": "เชียงยืน",
@@ -104568,7 +105225,7 @@
  },
  {
   "citizenId": 3440500022063,
-  "name": "นางพนมวรรณ  ยมศรีเคน",
+  "name": "นางพนมวรรณ  เหล่าอรรค",
   "district": "เชียงยืน",
   "pollingPlace": "ร.ร.บ้านเชียงยืน",
   "centerNo": 6,
@@ -109103,18 +109760,6 @@
   "rights": "ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 1309900263371,
-  "name": "นางสาวกนกวรรณ  เยี่ยงวิญญู",
-  "district": "บรบือ",
-  "pollingPlace": "ร.ร.บรบือวิทยาคาร",
-  "centerNo": 1,
-  "centerName": "ร.ร.บรบือวิทยาคาร/ร.ร.บรบือ/ร.ร.โนนราษีวิทยา/ร.ร.เทศบาลตําบลบรบือ",
-  "affiliationNo": 2,
-  "affiliationName": "ร.ร.บรบือ",
-  "listNo": 37,
-  "rights": "ผู้แทนสมาชิก"
- },
- {
   "citizenId": 1449900037001,
   "name": "นางสาวธนาพร  วัฒนศักดิ์สุรกุล",
   "district": "บรบือ",
@@ -109136,18 +109781,6 @@
   "affiliationNo": 2,
   "affiliationName": "ร.ร.บรบือ",
   "listNo": 39,
-  "rights": "ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 1469900068160,
-  "name": "นางสาวลภัสรดา  ปะสังคะเต",
-  "district": "บรบือ",
-  "pollingPlace": "ร.ร.บรบือวิทยาคาร",
-  "centerNo": 1,
-  "centerName": "ร.ร.บรบือวิทยาคาร/ร.ร.บรบือ/ร.ร.โนนราษีวิทยา/ร.ร.เทศบาลตําบลบรบือ",
-  "affiliationNo": 2,
-  "affiliationName": "ร.ร.บรบือ",
-  "listNo": 40,
   "rights": "ผู้แทนสมาชิก"
  },
  {
@@ -109508,18 +110141,6 @@
   "affiliationNo": 2,
   "affiliationName": "ร.ร.บรบือ",
   "listNo": 70,
-  "rights": "ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 1440300118346,
-  "name": "นางสาวอาภาภรณ์  สอนทะเดช",
-  "district": "บรบือ",
-  "pollingPlace": "ร.ร.บรบือวิทยาคาร",
-  "centerNo": 1,
-  "centerName": "ร.ร.บรบือวิทยาคาร/ร.ร.บรบือ/ร.ร.โนนราษีวิทยา/ร.ร.เทศบาลตําบลบรบือ",
-  "affiliationNo": 2,
-  "affiliationName": "ร.ร.บรบือ",
-  "listNo": 71,
   "rights": "ผู้แทนสมาชิก"
  },
  {
@@ -110447,18 +111068,6 @@
   "rights": "ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 1449900286663,
-  "name": "นางชนิสรา  ชุมวงศ์",
-  "district": "บรบือ",
-  "pollingPlace": "ร.ร.บ้านวังปลาโด",
-  "centerNo": 2,
-  "centerName": "ศูนย์ 13 หนองสิมวังไชยวังใหม่",
-  "affiliationNo": 7,
-  "affiliationName": "ร.ร.บ้านโนนทอง",
-  "listNo": 7,
-  "rights": "ผู้แทนสมาชิก"
- },
- {
   "citizenId": 3440600742688,
   "name": "นางสาวสุพรรณี  จันทร์ต่อ",
   "district": "บรบือ",
@@ -110492,18 +111101,6 @@
   "affiliationNo": 7,
   "affiliationName": "ร.ร.บ้านโนนทอง",
   "listNo": 10,
-  "rights": "ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 1449900334951,
-  "name": "นางสาวสุภาวดี  กุลาศรี",
-  "district": "บรบือ",
-  "pollingPlace": "ร.ร.บ้านวังปลาโด",
-  "centerNo": 2,
-  "centerName": "ศูนย์ 13 หนองสิมวังไชยวังใหม่",
-  "affiliationNo": 7,
-  "affiliationName": "ร.ร.บ้านโนนทอง",
-  "listNo": 11,
   "rights": "ผู้แทนสมาชิก"
  },
  {
@@ -111455,18 +112052,6 @@
   "rights": "ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 3440400005744,
-  "name": "นางสาวนุจรินทร์  อิ่มเสถียร",
-  "district": "บรบือ",
-  "pollingPlace": "ร.ร.บ้านบรบือ",
-  "centerNo": 3,
-  "centerName": "ศูนย์ 14 ราษีระบือ",
-  "affiliationNo": 3,
-  "affiliationName": "ร.ร.บ้านโคกกลางบ่อหลุบ",
-  "listNo": 9,
-  "rights": "ผู้แทนสมาชิก"
- },
- {
   "citizenId": 3440600112013,
   "name": "นายบุญทัน  อาสาสี",
   "district": "บรบือ",
@@ -111884,18 +112469,6 @@
   "affiliationNo": 7,
   "affiliationName": "ร.ร.บ้านบ่อใหญ่(บ่อใหญ่เรืองศิลป์)",
   "listNo": 2,
-  "rights": "ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 3440100415173,
-  "name": "นางรำไพ  มะปะเต",
-  "district": "บรบือ",
-  "pollingPlace": "ร.ร.บ้านบ่อใหญ่(บ่อใหญ่เรืองศิลป์)",
-  "centerNo": 4,
-  "centerName": "ศูนย์ 15 บรบือบ่อใหญ่หนองโก/ร.ร.หนองโกวิชาประสิทธิ์",
-  "affiliationNo": 7,
-  "affiliationName": "ร.ร.บ้านบ่อใหญ่(บ่อใหญ่เรืองศิลป์)",
-  "listNo": 3,
   "rights": "ผู้แทนสมาชิก"
  },
  {
@@ -113315,18 +113888,6 @@
   "rights": "ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 1449900036390,
-  "name": "นางสาวอภิรัชพร  ทิ้งแสน",
-  "district": "บรบือ",
-  "pollingPlace": "ร.ร.บ้านหนองจิก",
-  "centerNo": 5,
-  "centerName": "ศูนย์ 16 หนองจิกกำพี้/ร.ร.เหล่ายาววิทยาคาร",
-  "affiliationNo": 8,
-  "affiliationName": "ร.ร.บ้านเหล่ายาว",
-  "listNo": 2,
-  "rights": "ผู้แทนสมาชิก"
- },
- {
   "citizenId": 3440600223851,
   "name": "นางนภาพร  ฝ่ายจารี",
   "district": "บรบือ",
@@ -114020,18 +114581,6 @@
   "affiliationNo": 6,
   "affiliationName": "ร.ร.บ้านดอนพยอม",
   "listNo": 4,
-  "rights": "ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 3450100349014,
-  "name": "นางอำพร  โพธิ์สุวรรณ",
-  "district": "บรบือ",
-  "pollingPlace": "ร.ร.บ้านโนนแดงมะขามหวาน",
-  "centerNo": 6,
-  "centerName": "ศูนย์ 17 โนนแดงหนองคูขาด/ร.ร.โนนแดงวิทยาคม",
-  "affiliationNo": 7,
-  "affiliationName": "ร.ร.บ้านศาลา",
-  "listNo": 1,
   "rights": "ผู้แทนสมาชิก"
  },
  {
@@ -115208,18 +115757,6 @@
   "affiliationNo": 8,
   "affiliationName": "ร.ร.บ้านหนองขามแสบง",
   "listNo": 1,
-  "rights": "ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 3440601227850,
-  "name": "นางจูริก  ทักษิณ",
-  "district": "บรบือ",
-  "pollingPlace": "ร.ร.บ้านโนนม่วงเขวาน้อยโคกใหญ่เสือเฒ่า",
-  "centerNo": 7,
-  "centerName": "ศูนย์ 18 ลุ่มน้ำเสียว/ร.ร.ยางวิทยาคม/ร.ร.หนองม่วงวิทยาคาร",
-  "affiliationNo": 8,
-  "affiliationName": "ร.ร.บ้านหนองขามแสบง",
-  "listNo": 2,
   "rights": "ผู้แทนสมาชิก"
  },
  {
@@ -124211,18 +124748,6 @@
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 3440700063065,
-  "name": "นางกาญจนรัตน์  ศรีสร้อย",
-  "district": "นาเชือก",
-  "pollingPlace": "ร.ร.บ้านปอพาน",
-  "centerNo": 1,
-  "centerName": "กลุ่ม 10",
-  "affiliationNo": 1,
-  "affiliationName": "ร.ร.บ้านปอพานหนองโน",
-  "listNo": 4,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
   "citizenId": 3401500624099,
   "name": "นางกุหลาบ  กองเกิด",
   "district": "นาเชือก",
@@ -124484,18 +125009,6 @@
   "affiliationNo": 6,
   "affiliationName": "ร.ร.บ้านโคกก่องโคกสูงหนองแต้",
   "listNo": 3,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 3460400038600,
-  "name": "นายนิรุต  ชวนจิตร",
-  "district": "นาเชือก",
-  "pollingPlace": "ร.ร.บ้านปอพาน",
-  "centerNo": 1,
-  "centerName": "กลุ่ม 10",
-  "affiliationNo": 6,
-  "affiliationName": "ร.ร.บ้านโคกก่องโคกสูงหนองแต้",
-  "listNo": 4,
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
@@ -125567,18 +126080,6 @@
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 1440900029549,
-  "name": "นางอัจฉรา  ตาลพวง",
-  "district": "นาเชือก",
-  "pollingPlace": "ร.ร.เทศบาลนาเชือก",
-  "centerNo": 2,
-  "centerName": "กลุ่ม 11/ร.ร.เทศบาลนาเชือก",
-  "affiliationNo": 10,
-  "affiliationName": "ร.ร.บ้านหนองม่วง",
-  "listNo": 1,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
   "citizenId": 1440700139961,
   "name": "นายเกียรติศักดิ์  ประทุมวี",
   "district": "นาเชือก",
@@ -125855,18 +126356,6 @@
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 1449900243468,
-  "name": "นางสาววัลลภา  ปะติกานัง",
-  "district": "นาเชือก",
-  "pollingPlace": "ร.ร.เทศบาลนาเชือก",
-  "centerNo": 2,
-  "centerName": "กลุ่ม 11/ร.ร.เทศบาลนาเชือก",
-  "affiliationNo": 14,
-  "affiliationName": "ร.ร.บ้านเขวาไร่(ดรุณวิทยา)",
-  "listNo": 9,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
   "citizenId": 1440700093243,
   "name": "นางสาวจารุวรรณ  ปุเรทะตัง",
   "district": "นาเชือก",
@@ -126059,7 +126548,7 @@
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 1450200131181,
+  "citizenId": 1450200137781,
   "name": "นางอัมพร  ศาลาจันทร์",
   "district": "นาเชือก",
   "pollingPlace": "ร.ร.เทศบาลนาเชือก",
@@ -126503,18 +126992,6 @@
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 3440500616273,
-  "name": "นายชัยยศ  โพธิรส",
-  "district": "นาเชือก",
-  "pollingPlace": "ร.ร.บ้านหนองโพธิ์",
-  "centerNo": 3,
-  "centerName": "กลุ่ม 12",
-  "affiliationNo": 1,
-  "affiliationName": "ร.ร.บ้านกระต่ายร้านหญ้าโนนสวัสดิ์",
-  "listNo": 2,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
   "citizenId": 3461100010948,
   "name": "นางสาวเพชรนภา  จันทรสูรย์",
   "district": "นาเชือก",
@@ -126788,18 +127265,6 @@
   "affiliationNo": 6,
   "affiliationName": "ร.ร.บ้านปลาขาว",
   "listNo": 1,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 1440900087654,
-  "name": "นางธัญญธร  หมื่นไธสง",
-  "district": "นาเชือก",
-  "pollingPlace": "ร.ร.บ้านหนองโพธิ์",
-  "centerNo": 3,
-  "centerName": "กลุ่ม 12",
-  "affiliationNo": 6,
-  "affiliationName": "ร.ร.บ้านปลาขาว",
-  "listNo": 2,
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
@@ -127112,18 +127577,6 @@
   "affiliationNo": 11,
   "affiliationName": "ร.ร.บ้านหัวสระ",
   "listNo": 1,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 1440700080052,
-  "name": "นางสาววิสุดา  สีคาม",
-  "district": "นาเชือก",
-  "pollingPlace": "ร.ร.บ้านหนองโพธิ์",
-  "centerNo": 3,
-  "centerName": "กลุ่ม 12",
-  "affiliationNo": 11,
-  "affiliationName": "ร.ร.บ้านหัวสระ",
-  "listNo": 2,
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
@@ -127763,18 +128216,6 @@
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 1449900288950,
-  "name": "นายภวนันท์ชัย  สวัสดิ์สละ",
-  "district": "นาเชือก",
-  "pollingPlace": "ร.ร.นาเชือกพิทยาสรรค์",
-  "centerNo": 4,
-  "centerName": "กลุ่ม ร.ร.มัธยม",
-  "affiliationNo": 1,
-  "affiliationName": "ร.ร.นาเชือกพิทยาสรรค์",
-  "listNo": 54,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
   "citizenId": 1311100131561,
   "name": "นายนัฐพล  หาญสำโรง",
   "district": "นาเชือก",
@@ -127820,18 +128261,6 @@
   "affiliationNo": 1,
   "affiliationName": "ร.ร.นาเชือกพิทยาสรรค์",
   "listNo": 58,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 1440100117575,
-  "name": "นางสาวกาญจนา  พิมพ์แสง",
-  "district": "นาเชือก",
-  "pollingPlace": "ร.ร.นาเชือกพิทยาสรรค์",
-  "centerNo": 4,
-  "centerName": "กลุ่ม ร.ร.มัธยม",
-  "affiliationNo": 1,
-  "affiliationName": "ร.ร.นาเชือกพิทยาสรรค์",
-  "listNo": 59,
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
@@ -128408,18 +128837,6 @@
   "affiliationNo": 3,
   "affiliationName": "ร.ร.หนองโพธิ์วิทยาคม",
   "listNo": 14,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 3440900239957,
-  "name": "นายสุริยา  สีลาปัง",
-  "district": "นาเชือก",
-  "pollingPlace": "ร.ร.นาเชือกพิทยาสรรค์",
-  "centerNo": 4,
-  "centerName": "กลุ่ม ร.ร.มัธยม",
-  "affiliationNo": 3,
-  "affiliationName": "ร.ร.หนองโพธิ์วิทยาคม",
-  "listNo": 15,
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
@@ -132851,18 +133268,6 @@
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 1459900541515,
-  "name": "นางสาวมินตรา  ปาสานะโก",
-  "district": "พยัคฆภูมิพิสัย",
-  "pollingPlace": "ร.ร.พยัคฆภูมิพิสัย",
-  "centerNo": 1,
-  "centerName": "กลุ่ม 6",
-  "affiliationNo": 1,
-  "affiliationName": "ร.ร.บ้านดง",
-  "listNo": 3,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
   "citizenId": 3440900909171,
   "name": "นางดาราวรรณ  โสมนัส",
   "district": "พยัคฆภูมิพิสัย",
@@ -133520,18 +133925,6 @@
   "affiliationNo": 7,
   "affiliationName": "ร.ร.บ้านโนนม่วงท่าพลับพลา",
   "listNo": 3,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 1440900030695,
-  "name": "นางสาวพรเพ็ญ  นินทะราช",
-  "district": "พยัคฆภูมิพิสัย",
-  "pollingPlace": "ร.ร.พยัคฆภูมิพิสัย",
-  "centerNo": 1,
-  "centerName": "กลุ่ม 6",
-  "affiliationNo": 7,
-  "affiliationName": "ร.ร.บ้านโนนม่วงท่าพลับพลา",
-  "listNo": 4,
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
@@ -134264,18 +134657,6 @@
   "affiliationNo": 7,
   "affiliationName": "ร.ร.บ้านหนองฮี",
   "listNo": 3,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 1450300069094,
-  "name": "นางสาวจริยาภรณ์  ภูวิจักร์",
-  "district": "พยัคฆภูมิพิสัย",
-  "pollingPlace": "ร.ร.บ้านสระแคน",
-  "centerNo": 2,
-  "centerName": "กลุ่ม 7",
-  "affiliationNo": 8,
-  "affiliationName": "ร.ร.บ้านเก่าน้อยป่าชาดโนนเพ็ก",
-  "listNo": 1,
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
@@ -135336,7 +135717,7 @@
  },
  {
   "citizenId": 3440800919107,
-  "name": "นางฐิตารีย์  ปาปะใน",
+  "name": "นางธนญดา  ปักกาเวสา",
   "district": "พยัคฆภูมิพิสัย",
   "pollingPlace": "ร.ร.บ้านหนองสนมดอนติ้ว",
   "centerNo": 3,
@@ -135464,18 +135845,6 @@
   "affiliationNo": 7,
   "affiliationName": "ร.ร.บ้านเขวาทุ่ง",
   "listNo": 1,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 3441000097278,
-  "name": "นางชนากานต์  กาหลง",
-  "district": "พยัคฆภูมิพิสัย",
-  "pollingPlace": "ร.ร.บ้านหนองสนมดอนติ้ว",
-  "centerNo": 3,
-  "centerName": "กลุ่ม 8",
-  "affiliationNo": 7,
-  "affiliationName": "ร.ร.บ้านเขวาทุ่ง",
-  "listNo": 2,
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
@@ -137171,18 +137540,6 @@
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 3440900320479,
-  "name": "นางสาวจารุวรรณ  สาขจร",
-  "district": "พยัคฆภูมิพิสัย",
-  "pollingPlace": "ร.ร.พยัคฆภูมิวิทยาคาร",
-  "centerNo": 5,
-  "centerName": "กลุ่ม ร.ร.มัธยม",
-  "affiliationNo": 1,
-  "affiliationName": "ร.ร.พยัคฆภูมิวิทยาคาร",
-  "listNo": 36,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
   "citizenId": 1301700040575,
   "name": "นายกัปปน์ติพัฒน์  เกียดนอก",
   "district": "พยัคฆภูมิพิสัย",
@@ -137732,18 +138089,6 @@
   "affiliationNo": 1,
   "affiliationName": "ร.ร.พยัคฆภูมิวิทยาคาร",
   "listNo": 82,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 3450500442984,
-  "name": "นางสาวพรวัฒนา  ศรีคำภา",
-  "district": "พยัคฆภูมิพิสัย",
-  "pollingPlace": "ร.ร.พยัคฆภูมิวิทยาคาร",
-  "centerNo": 5,
-  "centerName": "กลุ่ม ร.ร.มัธยม",
-  "affiliationNo": 1,
-  "affiliationName": "ร.ร.พยัคฆภูมิวิทยาคาร",
-  "listNo": 83,
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
@@ -144683,18 +145028,6 @@
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 1440900104371,
-  "name": "นางสาวพชรอร  เทียมสม",
-  "district": "นาดูน",
-  "pollingPlace": "ร.ร.นาดูนประชาสรรพ์",
-  "centerNo": 1,
-  "centerName": "กลุ่ม 13/กลุ่ม ร.ร.มัธยม/กลุ่ม ร.ร.เทศบาล",
-  "affiliationNo": 4,
-  "affiliationName": "ร.ร.บ้านเครือซูด",
-  "listNo": 4,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
   "citizenId": 3411100181904,
   "name": "นางทองสาร  สีหาบุญมาก",
   "district": "นาดูน",
@@ -149568,7 +149901,7 @@
  },
  {
   "citizenId": 1440800265691,
-  "name": "นางสาวกาญจนาพร  ศรีศิลา",
+  "name": "นางสาวกาญจนาพร  พิลาลัย",
   "district": "ยางสีสุราช",
   "pollingPlace": "ร.ร.อนุบาลดงเมืองน้อย",
   "centerNo": 1,
@@ -149684,18 +150017,6 @@
   "affiliationNo": 2,
   "affiliationName": "ร.ร.บ้านโนนรัง",
   "listNo": 4,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 1440700089009,
-  "name": "นางสาวภิรมยา  โพธิ์รินทร์",
-  "district": "ยางสีสุราช",
-  "pollingPlace": "ร.ร.อนุบาลดงเมืองน้อย",
-  "centerNo": 1,
-  "centerName": "กลุ่ม 15/ร.ร.มัธยมยางสีสุราช",
-  "affiliationNo": 2,
-  "affiliationName": "ร.ร.บ้านโนนรัง",
-  "listNo": 5,
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
@@ -149864,18 +150185,6 @@
   "affiliationNo": 5,
   "affiliationName": "ร.ร.บ้านสว่าง  ",
   "listNo": 3,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 1449900578796,
-  "name": "นางสาวขวัญจิรา  หันทยุง",
-  "district": "ยางสีสุราช",
-  "pollingPlace": "ร.ร.อนุบาลดงเมืองน้อย",
-  "centerNo": 1,
-  "centerName": "กลุ่ม 15/ร.ร.มัธยมยางสีสุราช",
-  "affiliationNo": 5,
-  "affiliationName": "ร.ร.บ้านสว่าง  ",
-  "listNo": 4,
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
@@ -151139,18 +151448,6 @@
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 1440900048144,
-  "name": "นายพิทักษ์ชัย  มาดาโต",
-  "district": "ยางสีสุราช",
-  "pollingPlace": "ร.ร.บ้านเหล่าหมากคำ",
-  "centerNo": 2,
-  "centerName": "กลุ่ม 16/ร.ร.นาภูพิทยาคม",
-  "affiliationNo": 6,
-  "affiliationName": "ร.ร.บ้านแวงดงหนองยาง",
-  "listNo": 4,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
   "citizenId": 3440700133641,
   "name": "นายศุภกิตติ์  สุนารี",
   "district": "ยางสีสุราช",
@@ -151580,18 +151877,6 @@
   "affiliationNo": 11,
   "affiliationName": "ร.ร.นาภูพิทยาคม",
   "listNo": 13,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 3440900772086,
-  "name": "นางสาวมธุรส  เรืองสมบัติ",
-  "district": "ยางสีสุราช",
-  "pollingPlace": "ร.ร.บ้านเหล่าหมากคำ",
-  "centerNo": 2,
-  "centerName": "กลุ่ม 16/ร.ร.นาภูพิทยาคม",
-  "affiliationNo": 11,
-  "affiliationName": "ร.ร.นาภูพิทยาคม",
-  "listNo": 14,
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
@@ -154187,18 +154472,6 @@
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 1451100152703,
-  "name": "นางสาวทิพวรรณ  ผดุงรัตน์",
-  "district": "แกดำ",
-  "pollingPlace": "ร.ร.อนุบาลแกดำ",
-  "centerNo": 1,
-  "centerName": "ศูนย์ 11 แกดำวังแสง/ร.ร.แกดำวิทยาคาร",
-  "affiliationNo": 7,
-  "affiliationName": "ร.ร.บ้านวังแสง",
-  "listNo": 9,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
   "citizenId": 1349900618969,
   "name": "นางสาวพิมพเยีย  ชาวสวน",
   "district": "แกดำ",
@@ -154784,18 +155057,6 @@
   "affiliationNo": 6,
   "affiliationName": "ร.ร.บ้านโพนละออม",
   "listNo": 2,
-  "rights": "กรรมการ และ ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 3440200012631,
-  "name": "นางสาววิลาวัล  แสนชนะ",
-  "district": "แกดำ",
-  "pollingPlace": "ร.ร.มิตรภาพ",
-  "centerNo": 2,
-  "centerName": "ศูนย์ 12 มิตรภาพ/ร.ร.มิตรภาพ",
-  "affiliationNo": 7,
-  "affiliationName": "ร.ร.บ้านโสกแดง",
-  "listNo": 1,
   "rights": "กรรมการ และ ผู้แทนสมาชิก"
  },
  {
@@ -157511,18 +157772,6 @@
   "rights": "ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 1349900486965,
-  "name": "นายสรวัชร  พรหมรักษา",
-  "district": "กุดรัง",
-  "pollingPlace": "ร.ร.บ้านหนองคลองหัวขัว",
-  "centerNo": 1,
-  "centerName": "ศูนย์สร้อยดอกหมาก/ร.ร.กุดรังประชาสรรค์/ร.ร.เลิงแฝกประชาบำรุง",
-  "affiliationNo": 3,
-  "affiliationName": "ร.ร.บ้านหนองแสง  ",
-  "listNo": 8,
-  "rights": "ผู้แทนสมาชิก"
- },
- {
   "citizenId": 1440600048343,
   "name": "นายสิริวัฒน์  จันทร์ศรี",
   "district": "กุดรัง",
@@ -158039,18 +158288,6 @@
   "rights": "ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 5440390007878,
-  "name": "นางจีรภา  ชาติชนะ",
-  "district": "กุดรัง",
-  "pollingPlace": "ร.ร.บ้านหนองคลองหัวขัว",
-  "centerNo": 1,
-  "centerName": "ศูนย์สร้อยดอกหมาก/ร.ร.กุดรังประชาสรรค์/ร.ร.เลิงแฝกประชาบำรุง",
-  "affiliationNo": 13,
-  "affiliationName": "ร.ร.กุดรังประชาสรรค์",
-  "listNo": 2,
-  "rights": "ผู้แทนสมาชิก"
- },
- {
   "citizenId": 1430300241717,
   "name": "นางสาววัลบรรจุ  ปักการะสัย",
   "district": "กุดรัง",
@@ -158288,18 +158525,6 @@
   "affiliationNo": 1,
   "affiliationName": "ร.ร.บ้านนาโพธิ์  ",
   "listNo": 5,
-  "rights": "ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 1440300173525,
-  "name": "นายเตวิช  สีเนหะ",
-  "district": "กุดรัง",
-  "pollingPlace": "ร.ร.บ้านหนองแหน",
-  "centerNo": 2,
-  "centerName": "ศูนย์ทรัพย์วารี/ร.ร.นาโพธิ์พิทยาสรรพ์",
-  "affiliationNo": 1,
-  "affiliationName": "ร.ร.บ้านนาโพธิ์",
-  "listNo": 6,
   "rights": "ผู้แทนสมาชิก"
  },
  {
@@ -161483,18 +161708,6 @@
   "rights": "ผู้แทนสมาชิก"
  },
  {
-  "citizenId": 1409901042288,
-  "name": "นางสาวนุจรินทร์  นนทะบูรณ์",
-  "district": "ชื่นชม",
-  "pollingPlace": "ร.ร.ชื่นชมพิทยาคาร",
-  "centerNo": 1,
-  "centerName": "ศูนย์ชื่นชม/ร.ร.ชื่นชมพิทยาคาร/ร.ร.เทศบาลตำบลหนองกุง",
-  "affiliationNo": 2,
-  "affiliationName": "ร.ร.ชุมชนบ้านกุดปลาดุก",
-  "listNo": 6,
-  "rights": "ผู้แทนสมาชิก"
- },
- {
   "citizenId": 1279800003670,
   "name": "นางสาวภรณีนิภา  นิลรัตน์คำ",
   "district": "ชื่นชม",
@@ -161660,18 +161873,6 @@
   "affiliationNo": 6,
   "affiliationName": "ร.ร.บ้านหนองนาไร่เดียว  ",
   "listNo": 1,
-  "rights": "ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 1449900402477,
-  "name": "นางสาวนิศารัตน์  คงคำ",
-  "district": "ชื่นชม",
-  "pollingPlace": "ร.ร.ชื่นชมพิทยาคาร",
-  "centerNo": 1,
-  "centerName": "ศูนย์ชื่นชม/ร.ร.ชื่นชมพิทยาคาร/ร.ร.เทศบาลตำบลหนองกุง",
-  "affiliationNo": 6,
-  "affiliationName": "ร.ร.บ้านหนองนาไร่เดียว  ",
-  "listNo": 2,
   "rights": "ผู้แทนสมาชิก"
  },
  {
@@ -162044,18 +162245,6 @@
   "affiliationNo": 10,
   "affiliationName": "ร.ร.บ้านผือ  ",
   "listNo": 1,
-  "rights": "ผู้แทนสมาชิก"
- },
- {
-  "citizenId": 1409901020641,
-  "name": "นายจรุงศักดิ์  รักษาเคน",
-  "district": "ชื่นชม",
-  "pollingPlace": "ร.ร.ชื่นชมพิทยาคาร",
-  "centerNo": 1,
-  "centerName": "ศูนย์ชื่นชม/ร.ร.ชื่นชมพิทยาคาร/ร.ร.เทศบาลตำบลหนองกุง",
-  "affiliationNo": 10,
-  "affiliationName": "ร.ร.บ้านผือ  ",
-  "listNo": 2,
   "rights": "ผู้แทนสมาชิก"
  },
  {
@@ -163881,6 +164070,234 @@
   "affiliationName": "บำนาญ อ.ชื่นชม",
   "listNo": 114,
   "rights": "ผู้แทนสมาชิก"
+ },
+ {
+  "citizenId": 5450500084120,
+  "name": "นางสาวกนกกาญจน์  แสนสุวรรณ",
+  "district": "เมือง 1",
+  "pollingPlace": "ว.อาชีวศึกษา",
+  "centerNo": 13,
+  "centerName": "ว.อาชีวศึกษา",
+  "affiliationNo": 2,
+  "affiliationName": "วิทยาลัยอาชีวศึกษา (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก"
+ },
+ {
+  "citizenId": 1350800224731,
+  "name": "นางสาวจินดารัตน์  สาลี",
+  "district": "เมือง 1",
+  "pollingPlace": "ว.เกษตรและเทคโนโลยี",
+  "centerNo": 14,
+  "centerName": "ว.เกษตรและเทคโนโลยี",
+  "affiliationNo": 2,
+  "affiliationName": "วิทยาลัยเกษตรและเทคโนโลยี (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก"
+ },
+ {
+  "citizenId": 1449900418691,
+  "name": "นายอัชฌาพัชญ์  เนียมเกลี้ยง",
+  "district": "เมือง 2",
+  "pollingPlace": "ร.ร.อนุบาลมหาสารคาม",
+  "centerNo": 9,
+  "centerName": "ศูนย์ 6 อนุบาลท่าแก่ง",
+  "affiliationNo": 10,
+  "affiliationName": "ร.ร.อนุบาลมหาสารคาม (รายชื่อเพิ่มเติม)",
+  "listNo": 3,
+  "rights": "ผู้แทนสมาชิก"
+ },
+ {
+  "citizenId": 1409900670951,
+  "name": "นางสาวสุรัสวดี  โพธิรุกข์",
+  "district": "โกสุมพิสัย",
+  "pollingPlace": "ร.ร.ศรีโกสุมวิทยาฯ",
+  "centerNo": 1,
+  "centerName": "ศูนย์โกสัมพี/ร.ร.โกสุมวิทยาสรรค์",
+  "affiliationNo": 13,
+  "affiliationName": "ร.ร.โกสุมวิทยาสรรค์ (รายชื่อเพิ่มเติม)",
+  "listNo": 6,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก"
+ },
+ {
+  "citizenId": 1361000038152,
+  "name": "นางสาวศริตยา  ชนะภู",
+  "district": "โกสุมพิสัย",
+  "pollingPlace": "ร.ร.บ้านแพงหนองเหนือ",
+  "centerNo": 3,
+  "centerName": "ศูนย์แพงงามบอนสวรรค์/ร.ร.โพนงามพิทยานุกูล",
+  "affiliationNo": 16,
+  "affiliationName": "ร.ร.บ้านแห่เหนือ (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก"
+ },
+ {
+  "citizenId": 1449900512965,
+  "name": "นางสาวปรียาภรณ์  วิทักษบุตร",
+  "district": "โกสุมพิสัย",
+  "pollingPlace": "ร.ร.บ้านวังยาววิทยายน",
+  "centerNo": 4,
+  "centerName": "ศูนย์วังยาวเขวาไร่ดอนกลาง/ร.ร.วังยาวศึกษาวิทย์/ร.ร.เขวาไร่ศึกษา",
+  "affiliationNo": 15,
+  "affiliationName": "ร.ร.บ้านหนองสระพังโนนสะอาด (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก"
+ },
+ {
+  "citizenId": 3440900651181,
+  "name": "นางสาวพัสวรรณ  มาตย์แท่น",
+  "district": "วาปีปทุม",
+  "pollingPlace": "ร.ร.เมืองวาปีปทุม",
+  "centerNo": 1,
+  "centerName": "กลุ่ม 1",
+  "affiliationNo": 20,
+  "affiliationName": "ร.ร.บ้านกระยอมหนองเดิ่น (รายชื่อเพิ่มเติม)",
+  "listNo": 4,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก"
+ },
+ {
+  "citizenId": 1400700211106,
+  "name": "นางสาวชนกกานต์  ฐานะ",
+  "district": "เชียงยืน",
+  "pollingPlace": "ร.ร.บ้านโจดบัวบาน",
+  "centerNo": 2,
+  "centerName": "ศูนย์กู่ทอง",
+  "affiliationNo": 11,
+  "affiliationName": "ร.ร.บ้านนาทอง (รายชื่อเพิ่มเติม)",
+  "listNo": 2,
+  "rights": "ผู้แทนสมาชิก"
+ },
+ {
+  "citizenId": 1449900334668,
+  "name": "ส.อ.ณัฐวุฒิ  แก้วบุดดา",
+  "district": "เชียงยืน",
+  "pollingPlace": "ร.ร.เชียงยืนพิทยาคม",
+  "centerNo": 4,
+  "centerName": "ศูนย์โรงเรียนมัธยม/ร.ร.เทศบาลตำบลเชียงยืน",
+  "affiliationNo": 4,
+  "affiliationName": "ร.ร.เชียงยืนพิทยาคม (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "ผู้แทนสมาชิก"
+ },
+ {
+  "citizenId": 5440690012915,
+  "name": "นายประสูติศักดิ์  ศิริพรรณ",
+  "district": "บรบือ",
+  "pollingPlace": "ร.ร.บ้านบ่อใหญ่(บ่อใหญ่เรืองศิลป์)",
+  "centerNo": 4,
+  "centerName": "ศูนย์ 15 บรบือบ่อใหญ่หนองโก/ร.ร.หนองโกวิชาประสิทธิ์",
+  "affiliationNo": 14,
+  "affiliationName": "ร.ร.บ้านโคกกลาง (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "ผู้แทนสมาชิก"
+ },
+ {
+  "citizenId": 1449900027994,
+  "name": "นางสาวศรีอุบล  ฟักทอง",
+  "district": "บรบือ",
+  "pollingPlace": "ร.ร.บ้านโนนแดงมะขามหวาน",
+  "centerNo": 6,
+  "centerName": "ศูนย์ 17 โนนแดงหนองคูขาด/ร.ร.โนนแดงวิทยาคม",
+  "affiliationNo": 15,
+  "affiliationName": "ร.ร.บ้านเหล่าตามาอุดมชัย (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "ผู้แทนสมาชิก"
+ },
+ {
+  "citizenId": 1440900176576,
+  "name": "นางสาวสุภาดา  ปะกิระเนย์",
+  "district": "นาเชือก",
+  "pollingPlace": "ร.ร.บ้านปอพาน",
+  "centerNo": 1,
+  "centerName": "กลุ่ม 10",
+  "affiliationNo": 14,
+  "affiliationName": "ร.ร.บ้านหนองแดงสหมิตร (รายชื่อเพิ่มเติม)",
+  "listNo": 3,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก"
+ },
+ {
+  "citizenId": 3401000216854,
+  "name": "นายปิยวุฒิ  พรมภักดี",
+  "district": "นาเชือก",
+  "pollingPlace": "ร.ร.บ้านปอพาน",
+  "centerNo": 1,
+  "centerName": "กลุ่ม 10",
+  "affiliationNo": 14,
+  "affiliationName": "ร.ร.บ้านหนองแดงสหมิตร (รายชื่อเพิ่มเติม)",
+  "listNo": 4,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก"
+ },
+ {
+  "citizenId": 1449900548188,
+  "name": "นางสาวเสาวลักษณ์  หอมสมบัติ",
+  "district": "นาเชือก",
+  "pollingPlace": "ร.ร.เทศบาลนาเชือก",
+  "centerNo": 2,
+  "centerName": "กลุ่ม 11/ร.ร.เทศบาลนาเชือก",
+  "affiliationNo": 18,
+  "affiliationName": "ร.ร.บ้านกุดน้ำใสเหล่าคา (รายชื่อเพิ่มเติม",
+  "listNo": 1,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก"
+ },
+ {
+  "citizenId": 1449900265739,
+  "name": "นางสาวกิติยา  ใจพล",
+  "district": "พยัคฆภูมิพิสัย",
+  "pollingPlace": "ร.ร.พยัคฆภูมิพิสัย",
+  "centerNo": 1,
+  "centerName": "กลุ่ม 6",
+  "affiliationNo": 13,
+  "affiliationName": "ร.ร.บ้านเมืองเสือ (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก"
+ },
+ {
+  "citizenId": 1440700077752,
+  "name": "นางสาวนริศรา  จันทร์กลาง",
+  "district": "นาดูน",
+  "pollingPlace": "ร.ร.นาดูนประชาสรรพ์",
+  "centerNo": 1,
+  "centerName": "กลุ่ม 13/กลุ่ม ร.ร.มัธยม/กลุ่ม ร.ร.เทศบาล",
+  "affiliationNo": 19,
+  "affiliationName": "ร.ร.กู่สันตรัตน์ (รายชื่อเพิ่มเติม)",
+  "listNo": 3,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก"
+ },
+ {
+  "citizenId": 3350100401718,
+  "name": "นายเอกศิษฎ์  เทพปทุมวิไลพร",
+  "district": "นาดูน",
+  "pollingPlace": "ร.ร.นาดูนประชาสรรพ์",
+  "centerNo": 1,
+  "centerName": "กลุ่ม 13/กลุ่ม ร.ร.มัธยม/กลุ่ม ร.ร.เทศบาล",
+  "affiliationNo": 19,
+  "affiliationName": "ร.ร.บ้านหนองป้าน (รายชื่อเพิ่มเติม)",
+  "listNo": 4,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก"
+ },
+ {
+  "citizenId": 1449900029369,
+  "name": "นายวัชรานนท์  มะหัด",
+  "district": "ยางสีสุราช",
+  "pollingPlace": "ร.ร.อนุบาลดงเมืองน้อย",
+  "centerNo": 1,
+  "centerName": "กลุ่ม 15/ร.ร.มัธยมยางสีสุราช",
+  "affiliationNo": 13,
+  "affiliationName": "ร.ร.บ้านหนองหน่อง (รายชื่อเพิ่มเติม)",
+  "listNo": 2,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก"
+ },
+ {
+  "citizenId": 5229990006431,
+  "name": "นางสาวณภัสชญา  ปิดตานัง",
+  "district": "ยางสีสุราช",
+  "pollingPlace": "ร.ร.บ้านเหล่าหมากคำ",
+  "centerNo": 2,
+  "centerName": "กลุ่ม 16/ร.ร.นาภูพิทยาคม",
+  "affiliationNo": 12,
+  "affiliationName": "ร.ร.ชุมชนบ้านยางสีสุราช (รายชื่อเพิ่มเติม)",
+  "listNo": 1,
+  "rights": "กรรมการ และ ผู้แทนสมาชิก"
  }
 
         ];
