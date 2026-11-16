@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
     <title>ระบบตรวจสอบสิทธิลงคะแนนเลือกตั้ง - สหกรณ์ออมทรัพย์ครูมหาสารคาม จำกัด</title>
 
     <!-- Auto-Redirect / Handling for In-App Browsers (LINE / Messenger) -->
@@ -164422,21 +164425,17 @@
 
         // --- Storage Operations ---
         function loadDatabaseFromStorage() {
+            // 1. ลบข้อมูลเก่าออกจาก localStorage และหน่วยความจำสำรองทุกครั้งที่เปิดหน้าเว็บ
             try {
-                const stored = safeGetItem(STORAGE_KEY_DB);
-                if (stored) {
-                    voterDatabase = JSON.parse(stored);
-                    if (!Array.isArray(voterDatabase) || voterDatabase.length === 0) {
-                        voterDatabase = [...DEFAULT_VOTERS];
-                        saveDatabaseToStorage();
-                    }
-                } else {
-                    voterDatabase = [...DEFAULT_VOTERS];
-                    saveDatabaseToStorage();
-                }
-            } catch(e) {
-                voterDatabase = [...DEFAULT_VOTERS];
-            }
+                localStorage.removeItem(STORAGE_KEY_DB);
+            } catch (e) {}
+            delete inMemoryStorage[STORAGE_KEY_DB];
+
+            // 2. แปลงและโหลดข้อมูลล่าสุดจาก DEFAULT_VOTERS (รองรับทั้งคีย์ภาษาอังกฤษและคีย์ภาษาไทย)
+            voterDatabase = parseVoterJsonData(DEFAULT_VOTERS);
+
+            // 3. บันทึกข้อมูลชุดใหม่ลง localStorage ทันที
+            saveDatabaseToStorage();
 
             const statusText = document.getElementById('storageStatusText');
             if (statusText) {
